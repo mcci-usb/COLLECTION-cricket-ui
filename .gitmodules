@@ -1,0 +1,3 @@
+[submodule "mcci/tools/bin/release-tools"]
+	path = mcci/tools/bin/release-tools
+	url = git@gitlab-x.mcci.com:mcci/tools/bin/release-tools.git
