@@ -67,6 +67,6 @@ To create a release Tag from a git repo, follow this procedure.
 
 ```shell
 git checkout master
-git tag -a vx.y.z -m 'release-Vx.y.z'
+git tag -a vx.y.z -m "release-Vx.y.z"
 git push origin --tags
 ```
