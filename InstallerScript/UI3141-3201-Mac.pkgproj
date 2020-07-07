@@ -21,9 +21,9 @@
 								<key>GID</key>
 								<integer>80</integer>
 								<key>PATH</key>
-								<string>/Terry/icons</string>
+								<string>../ui-3141-3201/src/icons</string>
 								<key>PATH_TYPE</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>PERMISSIONS</key>
 								<integer>511</integer>
 								<key>TYPE</key>
@@ -49,9 +49,9 @@
 								<key>GID</key>
 								<integer>80</integer>
 								<key>PATH</key>
-								<string>/Terry/UI3201-3141.app</string>
+								<string>../ui-3141-3201/src/exeout/UI3141-3201.app</string>
 								<key>PATH_TYPE</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>PERMISSIONS</key>
 								<integer>493</integer>
 								<key>TYPE</key>
