@@ -95,11 +95,13 @@ The exe 'UI3141-3201' show up in `destdir/ui-3141-3201/src/exeout/`.
 
 <strong>On Mac:</strong>
 
+Move to the directory `destdir/ui-3141-3201/src/`
+
 ```shell
 pyinstaller --distpath ./exeout/ --workpath ./exeout/build/ -F -w -i=./icons/mcci_logo.icns main.py -n UI3141-3201
 ```
 
-The exe 'UI3141-3201' show up in `destdir/exeout/`.
+The exe 'UI3141-3201' show up in `destdir/ui-3141-3201/src/exeout/`.
 
 ## Application Installer creation
 
@@ -139,6 +141,8 @@ Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-W
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
 the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag>.zip`.
 
+The Application Installer must be digitally signed before it can be deployed.
+
 <strong>On Linux:</strong>
 
 Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>`.
@@ -155,5 +159,7 @@ Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-M
 
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
 the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag>.zip`.
+
+The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 
