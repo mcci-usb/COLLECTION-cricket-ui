@@ -25,7 +25,7 @@ Then change directory to the <code><em><strong>destdir</strong></em></code>.
 Clone the release tag repository from MCCI's gitlab-x server using the command:
 
 ```shell
-git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-ui3141_3201.git --branch <tag_name> --single-brnach
+git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-ui3141_3201.git --branch <tag_name> --single-branch
 ```
 For an example - Cloning for the release tag 'v1.0.0', replace the <tag_name> with v1.0.0 
 
@@ -69,11 +69,13 @@ sudo pip3 install pyinstaller
 
 <strong>On Windows and Linux:</strong>
 
+Move to the directory `destdir/ui-3141-3201/src/`
+
 ```shell
 pyinstaller --distpath ./exeout/ --workpath ./exeout/build/ -F -w -i=./icons/mcci_logo.ico main.py -n UI3141-3201
 ```
 
-The exe 'UI3141-3201' show up in `destdir/exeout/`.
+The exe 'UI3141-3201' show up in `destdir/ui-3141-3201/src/exeout/`.
 
 <strong>On Mac:</strong>
 
