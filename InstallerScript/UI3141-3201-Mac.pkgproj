@@ -523,9 +523,9 @@
 			<key>BUILD_PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>/UI3141-App/AppInstaller</string>
+				<string>../AppInstaller</string>
 				<key>PATH_TYPE</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>EXCLUDED_FILES</key>
 			<array>
@@ -696,7 +696,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>UI3141-3201</string>
+			<string>UI3141-3201-Installer</string>
 			<key>PAYLOAD_ONLY</key>
 			<false/>
 		</dict>
