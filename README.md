@@ -61,9 +61,25 @@ sudo pip3 install pyinstaller
 
 ## Interpret python source
 
+This is to ensure that the source can be interpreted without any error
+
+<strong>On Windows:</strong>
+
 ```shell
-'python main.py'  if not success try  'python3 main.py'
+python main.py
 ```
+
+This show up application UI window on screen
+
+<strong>On Linux and Mac:</strong>
+
+```shell
+python3 main.py
+```
+
+This show up application UI window on screen
+
+
 
 ## Build procedure
 
