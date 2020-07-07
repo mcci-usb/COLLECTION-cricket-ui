@@ -151,6 +151,8 @@ Copy the exe 'UI3141-3201' from `destdir/exeout/` to release directory.
 
 Copy the icons folder to the release directory.
 
+Copy the doc folder to the release directory.
+
 Run `tar -cvzf ./MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>.tgz MCCI-USB-Switch-3141-3201-GUI-Linux-<tag_name>`
 
 <strong>On Mac:</strong>
