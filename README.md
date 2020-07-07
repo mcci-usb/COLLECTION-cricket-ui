@@ -136,29 +136,29 @@ The App Installer 'UI3141-3201-Installer' show up in `destdir/AppInstaller/`.
 
 <strong>On Windows:</strong>
 
-Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag>`
+Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag_name>`
 
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag>.zip`.
+the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag_name>.zip`.
 
 The Application Installer must be digitally signed before it can be deployed.
 
 <strong>On Linux:</strong>
 
-Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>`.
+Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Linux-<tag_name>`.
 
 Copy the exe 'UI3141-3201' from `destdir/exeout/` to release directory.
 
 Copy the icons folder to the release directory.
 
-Run `tar -cvzf ./MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>.tgz MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>`
+Run `tar -cvzf ./MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>.tgz MCCI-USB-Switch-3141-3201-GUI-Linux-<tag_name>`
 
 <strong>On Mac:</strong>
 
-Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag>`.
+Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag_name>`.
 
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag>.zip`.
+the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag_name>.zip`.
 
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
