@@ -9,7 +9,6 @@ This collection of repositories is used for building `UI3141-3201`.
 - [Build procedure](#build-procedure)
 - [Application Installer creation](#application-installer-creation)
 - [Application release procedure](#application-release-procedure)
-- [Source release procedure](#source-release-procedure)
 
 <!-- /TOC -->
 
@@ -23,11 +22,12 @@ Then change directory to the <code><em><strong>destdir</strong></em></code>.
 
 <strong>From gitlab-x.mcci.com</strong>
 
-Clone the repository from MCCI's gitlab-x server using the command:
+Clone the release tag repository from MCCI's gitlab-x server using the command:
 
 ```shell
-git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-ui3141_3201.git
+git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-ui3141_3201.git --branch <tag_name> --single-brnach
 ```
+For an example - Cloning for the release tag 'v1.0.0', replace the <tag_name> with v1.0.0 
 
 Then change directories to the top level of the cloned repository.
 
@@ -116,34 +116,26 @@ The App Installer 'UI3141-3201-Installer' show up in `destdir/AppInstaller/`.
 
 <strong>On Windows:</strong>
 
-Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Windows-Vx_y`
+Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag>`
 
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Windows-Vx_y.zip`.
+the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Windows-<tag>.zip`.
 
 <strong>On Linux:</strong>
 
-Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Linux-Vx_y`.
+Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>`.
 
 Copy the exe 'UI3141-3201' from `destdir/exeout/` to release directory.
 
 Copy the icons folder to the release directory.
 
-Run `tar -cvzf ./MCCI-USB-Switch-3141-3201-GUI-Linux-Vx_y.tgz MCCI-USB-Switch-3141-3201-GUI-Linux-Vx_y`
+Run `tar -cvzf ./MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>.tgz MCCI-USB-Switch-3141-3201-GUI-Linux-<tag>`
 
 <strong>On Mac:</strong>
 
-Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Mac-Vx_y`
+Create a release directory with release version `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag>`.
+
+Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
+the name of zipped folder should be  `MCCI-USB-Switch-3141-3201-GUI-Mac-<tag>.zip`.
 
 
-## Source release procedure
-
-To make a source release from a git repo, follow this procedure.
-
-- Create a tag for the release in the top-level repository. Usually this is of the form `V1.01a`.
-
-```shell
-git checkout master
-git tag -a v1.01a -m 'release-V1.01a'
-git push origin --tags
-```
