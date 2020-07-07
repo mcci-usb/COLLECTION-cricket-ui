@@ -46,6 +46,8 @@ The source linked as submodule, move to the source directory verify the required
 
 Update the User guide document 'MCCI-USB-Switch-3141-3201-GUI-User-Guide' if needed and commit if any changes with release message.
 
+For any changes in User Guide Document , it must be sent to MCCI document publish process.
+
 <strong>Update the Installer</strong>
 
 If any changes in installer script, update and commit the changes with release message.
@@ -56,7 +58,9 @@ If any changes in installation and build procedure update the instructions in RE
 
 <strong>Update the Release Notes</strong>
 
-Update the Release notes with all updates made for the release and commit the changes with proper message
+Update the Release notes with all updates made for the release and commit the changes with proper message.
+
+For any changes in Release Notes , it must be sent to MCCI document publish process.
 
 
 ## Release procedure
