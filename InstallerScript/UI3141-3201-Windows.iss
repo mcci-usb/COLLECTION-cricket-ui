@@ -23,9 +23,9 @@ DisableProgramGroupPage=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
-OutputDir=AppInstaller
-OutputBaseFilename=UI3141-3201-Windows
-SetupIconFile=..\icons\mcci_logo.ico
+OutputDir=..\AppInstaller
+OutputBaseFilename=UI3141-3201-Installer
+SetupIconFile=..\ui-3141-3201\src\icons\mcci_logo.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -37,8 +37,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\exeout\UI3141-3201.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\icons\*"; DestDir: "{app}\icons"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\ui-3141-3201\src\exeout\UI3141-3201.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\ui-3141-3201\src\icons\*"; DestDir: "{app}\icons"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\doc\*"; DestDir: "{app}\docs"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
