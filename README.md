@@ -35,6 +35,17 @@ Then change directories to the top level of the cloned repository.
 
 <strong>On Windows:</strong>
 
+Development environment
+
+* OS - Windows 10 64 bit
+* Python - 3.7.6
+* wxpython - 4.0.7.post2
+* pyserial - 3.4
+* pyusb - 1.0.2
+* libusb - 1.0.22b9
+* libusb1 - 1.8
+* pyinstaller - 3.6 
+
 Download [python3.7.6](https://www.python.org/downloads/release/python-376/) and install
 
 ```shell
@@ -48,6 +59,19 @@ pip install pyinstaller
 
 <strong>On Linux and Mac:</strong>
 
+Development environment
+
+* Linux OS - Ubuntu 20.4 64 bit
+* Python - 3.8.2
+* Mac OS - High Sierra
+* Python - 3.7.0
+* wxpython - 4.0.7.post2
+* pyserial - 3.4
+* pyusb - 1.0.2
+* libusb - 1.0.22b9
+* libusb1 - 1.8
+* pyinstaller - 3.6  
+
 ```shell
 sudo apt-get install python3
 sudo apt-get install pip3
@@ -59,9 +83,15 @@ sudo pip3 install libusb1
 sudo pip3 install pyinstaller
 ```
 
+Note:
+* If the installation of wxpython is not success, perform `sudo apt-get install build-essential libgtk-3-dev`
+* Some times the installation of wxpython takes longer time (>30 minutes).
+
 ## Interpret python source
 
 This is to ensure that the source can be interpreted without any error
+
+Move to the directory `destdir/ui-3141-3201/src/`
 
 <strong>On Windows:</strong>
 
