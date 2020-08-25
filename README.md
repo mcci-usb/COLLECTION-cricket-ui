@@ -74,7 +74,7 @@ Development environment
 
 ```shell
 sudo apt-get install python3
-sudo apt-get install pip3
+sudo apt-get install python3-pip
 sudo pip3 install wxpython==4.0.7.post2
 sudo pip3 install pyserial
 sudo pip3 install pyusb

@@ -26,7 +26,7 @@
 ;   http://www.jrsoftware.org/isinfo.php
 
 #define MyAppName "UI3141-3201"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.2"
 #define MyAppPublisher "MCCI, Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "UI3141-3201.exe"
