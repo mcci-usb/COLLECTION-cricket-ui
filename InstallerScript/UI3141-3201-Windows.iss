@@ -26,7 +26,7 @@
 ;   http://www.jrsoftware.org/isinfo.php
 
 #define MyAppName "UI3141-3201"
-#define MyAppVersion "1.0.2"
+#define MyAppVersion "1.2.0"
 #define MyAppPublisher "MCCI, Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "UI3141-3201.exe"
@@ -72,4 +72,3 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
-
