@@ -16,38 +16,6 @@
 						<key>CHILDREN</key>
 						<array>
 							<dict>
-								<key>CHILDREN</key>
-								<array/>
-								<key>GID</key>
-								<integer>80</integer>
-								<key>PATH</key>
-								<string>../doc</string>
-								<key>PATH_TYPE</key>
-								<integer>1</integer>
-								<key>PERMISSIONS</key>
-								<integer>511</integer>
-								<key>TYPE</key>
-								<integer>3</integer>
-								<key>UID</key>
-								<integer>0</integer>
-							</dict>
-							<dict>
-								<key>CHILDREN</key>
-								<array/>
-								<key>GID</key>
-								<integer>80</integer>
-								<key>PATH</key>
-								<string>../ui-3141-3201/src/icons</string>
-								<key>PATH_TYPE</key>
-								<integer>1</integer>
-								<key>PERMISSIONS</key>
-								<integer>511</integer>
-								<key>TYPE</key>
-								<integer>3</integer>
-								<key>UID</key>
-								<integer>0</integer>
-							</dict>
-							<dict>
 								<key>BUNDLE_CAN_DOWNGRADE</key>
 								<false/>
 								<key>BUNDLE_POSTINSTALL_PATH</key>
@@ -65,13 +33,126 @@
 								<key>GID</key>
 								<integer>80</integer>
 								<key>PATH</key>
-								<string>../ui-3141-3201/src/exeout/UI3141-3201.app</string>
+								<string>../cricketui/src/exeout/CricketUI.app</string>
 								<key>PATH_TYPE</key>
 								<integer>1</integer>
 								<key>PERMISSIONS</key>
 								<integer>493</integer>
 								<key>TYPE</key>
 								<integer>3</integer>
+								<key>UID</key>
+								<integer>0</integer>
+							</dict>
+							<dict>
+								<key>CHILDREN</key>
+								<array/>
+								<key>GID</key>
+								<integer>80</integer>
+								<key>PATH</key>
+								<string>../doc</string>
+								<key>PATH_TYPE</key>
+								<integer>1</integer>
+								<key>PERMISSIONS</key>
+								<integer>511</integer>
+								<key>TYPE</key>
+								<integer>3</integer>
+								<key>UID</key>
+								<integer>0</integer>
+							</dict>
+							<dict>
+								<key>CHILDREN</key>
+								<array>
+									<dict>
+										<key>CHILDREN</key>
+										<array/>
+										<key>GID</key>
+										<integer>80</integer>
+										<key>PATH</key>
+										<string>../cricketui/src/icons/btn_off.png</string>
+										<key>PATH_TYPE</key>
+										<integer>1</integer>
+										<key>PERMISSIONS</key>
+										<integer>511</integer>
+										<key>TYPE</key>
+										<integer>3</integer>
+										<key>UID</key>
+										<integer>0</integer>
+									</dict>
+									<dict>
+										<key>CHILDREN</key>
+										<array/>
+										<key>GID</key>
+										<integer>80</integer>
+										<key>PATH</key>
+										<string>../cricketui/src/icons/btn_on.png</string>
+										<key>PATH_TYPE</key>
+										<integer>1</integer>
+										<key>PERMISSIONS</key>
+										<integer>511</integer>
+										<key>TYPE</key>
+										<integer>3</integer>
+										<key>UID</key>
+										<integer>0</integer>
+									</dict>
+									<dict>
+										<key>CHILDREN</key>
+										<array/>
+										<key>GID</key>
+										<integer>80</integer>
+										<key>PATH</key>
+										<string>../cricketui/src/icons/mcci_logo.icns</string>
+										<key>PATH_TYPE</key>
+										<integer>1</integer>
+										<key>PERMISSIONS</key>
+										<integer>511</integer>
+										<key>TYPE</key>
+										<integer>3</integer>
+										<key>UID</key>
+										<integer>0</integer>
+									</dict>
+									<dict>
+										<key>CHILDREN</key>
+										<array/>
+										<key>GID</key>
+										<integer>80</integer>
+										<key>PATH</key>
+										<string>../cricketui/src/icons/mcci_logo.ico</string>
+										<key>PATH_TYPE</key>
+										<integer>1</integer>
+										<key>PERMISSIONS</key>
+										<integer>511</integer>
+										<key>TYPE</key>
+										<integer>3</integer>
+										<key>UID</key>
+										<integer>0</integer>
+									</dict>
+									<dict>
+										<key>CHILDREN</key>
+										<array/>
+										<key>GID</key>
+										<integer>80</integer>
+										<key>PATH</key>
+										<string>../cricketui/src/icons/mcci_logo.png</string>
+										<key>PATH_TYPE</key>
+										<integer>1</integer>
+										<key>PERMISSIONS</key>
+										<integer>511</integer>
+										<key>TYPE</key>
+										<integer>3</integer>
+										<key>UID</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>GID</key>
+								<integer>80</integer>
+								<key>PATH</key>
+								<string>icons</string>
+								<key>PATH_TYPE</key>
+								<integer>2</integer>
+								<key>PERMISSIONS</key>
+								<integer>509</integer>
+								<key>TYPE</key>
+								<integer>2</integer>
 								<key>UID</key>
 								<integer>0</integer>
 							</dict>
@@ -510,7 +591,7 @@
 			<key>FOLLOW_SYMBOLIC_LINKS</key>
 			<false/>
 			<key>IDENTIFIER</key>
-			<string>com.mygreatcompany.pkg.UI3141-3201</string>
+			<string>com.mygreatcompany.pkg.CicketUI</string>
 			<key>LOCATION</key>
 			<integer>0</integer>
 			<key>NAME</key>
@@ -712,7 +793,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>UI3141-3201-Installer</string>
+			<string>CricketUI-Installer</string>
 			<key>PAYLOAD_ONLY</key>
 			<false/>
 		</dict>
