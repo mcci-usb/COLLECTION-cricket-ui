@@ -1,3 +1,6 @@
 [submodule "ui-3141-3201"]
 	path = ui-3141-3201
 	url = git@gitlab-x.mcci.com:Seenivasan/ui-3141-3201.git
+[submodule "cricketui"]
+	path = cricketui
+	url = git@gitlab-x.mcci.com:Seenivasan/cricketui.git
