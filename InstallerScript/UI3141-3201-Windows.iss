@@ -1,9 +1,9 @@
 ;*****************************************************************************
 ;
-; Module:  UI3141-3201-Windows.iss
+; Module:  CricketUI-Windows.iss
 ;
 ; Function:
-;	Inno Setup install script for the UI3141-3201-Installer distribution.
+;	Inno Setup install script for the Cricket UI-Installer distribution.
 ;
 ; Copyright notice:
 ;	This file copyright (C) 2020 by
@@ -25,11 +25,11 @@
 ; to compile this script, please install Inno Setup 5.5.9 or later, from
 ;   http://www.jrsoftware.org/isinfo.php
 
-#define MyAppName "UI3141-3201"
-#define MyAppVersion "1.2.0"
+#define MyAppName "Cricket UI"
+#define MyAppVersion "2.0.0"
 #define MyAppPublisher "MCCI, Corporation"
 #define MyAppURL "https://mcci.com"
-#define MyAppExeName "UI3141-3201.exe"
+#define MyAppExeName "CricketUI.exe"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -48,8 +48,8 @@ DisableProgramGroupPage=yes
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=..\AppInstaller
-OutputBaseFilename=UI3141-3201-Installer
-SetupIconFile=..\ui-3141-3201\src\icons\mcci_logo.ico
+OutputBaseFilename=CricketUI-Installer
+SetupIconFile=..\cricketui\src\icons\mcci_logo.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -61,8 +61,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\ui-3141-3201\src\exeout\UI3141-3201.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\ui-3141-3201\src\icons\*"; DestDir: "{app}\icons"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\cricketui\src\exeout\CricketUI.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\cricketui\src\icons\*"; DestDir: "{app}\icons"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\doc\*"; DestDir: "{app}\docs"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
@@ -72,3 +72,35 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 
 [Run]
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
+
+[UninstallDelete]
+Type: filesandordirs; Name: "{app}";
+
+[Code]
+function InitializeSetup(): Boolean;
+var
+  oldVersion: String;
+  uninstaller: String;
+  ErrorCode: Integer;
+  vCurID      :String;
+  vCurAppName :String;
+begin
+  vCurID:= '{#SetupSetting("AppId")}';
+  vCurAppName:= '{#SetupSetting("AppName")}';
+  //remove first "{" of ID
+  vCurID:= Copy(vCurID, 2, Length(vCurID) - 1);
+  //
+  if RegKeyExists(HKEY_LOCAL_MACHINE,
+    'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\' + vCurID + '_is1') then
+  begin
+    RegQueryStringValue(HKEY_LOCAL_MACHINE,
+      'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\' + vCurID + '_is1',
+      'UninstallString', uninstaller);
+    ShellExec('runas', uninstaller, '/SILENT', '', SW_HIDE, ewWaitUntilTerminated, ErrorCode);
+    Result := True;
+  end
+  else
+  begin
+    Result := True;
+  end;
+end;
