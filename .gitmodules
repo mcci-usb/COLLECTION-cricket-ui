@@ -1,3 +1,4 @@
 [submodule "cricketui"]
 	path = cricketui
 	url = git@gitlab-x.mcci.com:Seenivasan/cricketui.git
+	branch = release2.0.0
