@@ -1,0 +1,58 @@
+[DEBREATE-0.7.13]
+<<CTRL>>
+Package: Cricket
+Version: 2.0.0
+Maintainer: Seenivasan <seenivasanv@mcci.com>
+Section: embedded
+Homepage: www.mcci.com
+Architecture: all
+Priority: optional
+Description: User Interface for controlling MCCI USB Switches  and Connection Exercisers
+
+<</CTRL>>
+<<FILES>>
+1
+/home/seenivasan/seeni/cricket/doc/950001557d_(MCCI-Cricket-UI-Release-Notes) .pdf* -> 950001557d_(MCCI-Cricket-UI-Release-Notes) .pdf -> /usr/bin/doc
+/home/seenivasan/seeni/cricket/doc/950001552d_(MCCI-Cricket-UI-User-Guide).pdf* -> 950001552d_(MCCI-Cricket-UI-User-Guide).pdf -> /usr/bin/doc
+/home/seenivasan/seeni/cricket/cricket/src/dist/Cricket* -> Cricket -> /usr/bin
+/home/seenivasan/seeni/cricket/cricket/src/icons/mcci_logo.ico -> mcci_logo.ico -> /usr/bin/icons
+/home/seenivasan/seeni/cricket/devrules/99-CricketUI.rules* -> 99-CricketUI.rules -> /etc/udev/rules.d
+<</FILES>>
+<<SCRIPTS>>
+<<PREINST>>
+0
+<</PREINST>>
+<<POSTINST>>
+0
+<</POSTINST>>
+<<PRERM>>
+0
+<</PRERM>>
+<<POSTRM>>
+0
+<</POSTRM>>
+<</SCRIPTS>>
+<<CHANGELOG>>
+<<DEST>>DEFAULT<</DEST>>
+
+<</CHANGELOG>>
+<<COPYRIGHT>>
+
+<</COPYRIGHT>>
+<<MENU>>
+1
+Name=Cricket
+Version=1.0
+Exec=Cricket
+Icon=/usr/bin/icons/mcci_logo.ico
+Type=Application
+Terminal=false
+StartupNotify=true
+Encoding=UTF-8
+Categories=Development;
+<</MENU>>
+<<BUILD>>
+0
+0
+0
+<</BUILD>>

@@ -1,6 +1,6 @@
-# Release-Cricket UI
+# Release-Cricket
 
-Use this collection of repositories for creating release Tag for the `Cricket UI`.
+Use this collection of repositories for creating release Tag for the `Cricket`.
 <!-- TOC depthFrom:2 updateOnSave:true -->
 
 - [Installing Sources](#installing-sources)
@@ -23,18 +23,18 @@ Then change directory to the <code><em><strong>destdir</strong></em></code>.
 Clone the repository from MCCI's gitlab-x server using the command:
 
 ```shell
-git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-cricketui.git
+git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-cricket.git
 ```
 
 Then change directories to the top level of the cloned repository.
 
 ## About Project Directory
 
-* Source files - `collection-cricketui/cricketui/`
-* User Guide and Release Notes   - `collection-cricketui/doc/`
-* Installer for Windows and Mac  - `collection-cricketui/installer/`
-* README.md  - `collection-cricketui/`
-* RELEASE.md - `collection-cricketui/`
+* Source files - `collection-cricket/cricket/`
+* User Guide and Release Notes   - `collection-cricket/doc/`
+* Installer for Windows and Mac  - `collection-cricket/installer/`
+* README.md  - `collection-cricket/`
+* RELEASE.md - `collection-cricket/`
 
 ## Update the changes
 

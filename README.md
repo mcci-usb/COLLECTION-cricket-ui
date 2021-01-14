@@ -1,6 +1,6 @@
-# COLLECTION-Cricket UI
+# COLLECTION-Cricket
 
-This collection of repositories is used for building `Cricket UI`.
+This collection of repositories is used for building `Cricket`.
 <!-- TOC depthFrom:2 updateOnSave:true -->
 
 - [Installing Sources](#installing-sources)
@@ -25,7 +25,7 @@ Then change directory to the <code><em><strong>destdir</strong></em></code>.
 Clone the release tag repository from MCCI's gitlab-x server using the command:
 
 ```shell
-git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-cricketui.git --branch <tag_name> --single-branch
+git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-cricket.git --branch <tag_name> --single-branch
 ```
 For an example - Cloning for the release tag 'v1.0.0', replace the <tag_name> with v1.0.0 
 
@@ -93,7 +93,7 @@ Note:
 
 This is to ensure that the source can be interpreted without any error
 
-Move to the directory `destdir/cricketui/src/`
+Move to the directory `destdir/cricket/src/`
 
 <strong>On Windows:</strong>
 
@@ -112,7 +112,6 @@ python3 main.py
 This show up application UI window on screen
 
 
-
 ## Build procedure
 
 <strong>On Windows and Linux:</strong>
@@ -121,26 +120,30 @@ Placing of libusb-1.0.dll for exe creation
 
 * Move to the Python installation directory
 * Copy the libusb-1.0.dll from `Python/Python37-32/Lib/site-packages/libusb/_platform/_windows/x86/`
-* Paste the dll to the directory `destdir/cricketui/src/`
+* Paste the dll to the directory `destdir/cricket/src/`
 * Paste the dll to the OS directory `Windows/SysWOW64/`
 
-Move to the directory `destdir/cricketui/src/`
+Move to the directory `destdir/cricket/src/`
+
+<strong>On Windows:</strong>
 
 ```shell
-pyinstaller --distpath ./exeout/ --workpath ./exeout/build/ -F -w -i=./icons/mcci_logo.ico main.py -n CricketUI
+pyinstaller Cricket-Windows.spec
 ```
 
-The exe 'CricketUI' show up in `destdir/cricketui/src/exeout/`.
+<strong>On Linux:</strong>
+
+```shell
+pyinstaller Cricket-Linux.spec
+```
 
 <strong>On Mac:</strong>
 
-Move to the directory `destdir/cricketui/src/`
-
 ```shell
-pyinstaller --distpath ./exeout/ --workpath ./exeout/build/ -F -w -i=./icons/mcci_logo.icns main.py -n CricketUI
+pyinstaller Cricket-Mac.spec
 ```
 
-The exe 'CricketUI' show up in `destdir/cricketui/src/exeout/`.
+The executable 'Cricket' show up in `destdir/cricket/src/dist/`.
 
 ## Application Installer creation
 
@@ -148,15 +151,18 @@ The exe 'CricketUI' show up in `destdir/cricketui/src/exeout/`.
 
 Download [Inno Setup Compiler](https://jrsoftware.org/isdl.php#stable) and install
 
-Run the Inno Setup Script file 'CricketUI-Windows' which is in `destdir/InstallerScript/`.
+Run the Inno Setup Script file 'Cricket-Windows' which is in `destdir/installerScript/`.
 
-The App Installer 'CricketUI-Installer' show up in `destdir/AppInstaller/`.
-
+The App Installer 'cricket-<ver tag>-windows-installer' show up in `destdir/AppInstaller/`.
 
 
 <strong>On Linux:</strong>
 
-There is no installer setup for Linux.
+Create Linux deb package using Debreate Debian package builder
+
+Run the Package project file 'Cricket-Linux' which is in `destdir/installerScript/`.
+
+The App Installer 'cricket-<ver tag>-linux-installer' show up in `destdir/AppInstaller/`.
 
 
 
@@ -166,40 +172,37 @@ Download [Packages](http://s.sudre.free.fr/Software/Packages/about.html) and ins
 
 To know about [Packages](https://www.techrepublic.com/article/how-to-repackage-os-x-apps-with-packages/) more
 
-Run the Package project file 'CricketUI-Mac' which is in `destdir/InstallerScript/`.
+Run the Package project file 'Cricket-Mac' which is in `destdir/installerScript/`.
 
-The App Installer 'CricketUI-Installer' show up in `destdir/AppInstaller/`.
+The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInstaller/`.
 
 
 ## Application release procedure
 
 <strong>On Windows:</strong>
 
-Create a release directory with release version `MCCI-Cricket-UI-Windows-<tag_name>`
+Create a release directory with release version `cricket-<ver tag>-windows-installer`
 
-Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `MCCI-Cricket-UI-Windows-<tag_name>.zip`.
+Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
+the name of zipped folder should be  `cricket-<ver tag>-windows-installer.zip`.
 
 The Application Installer must be digitally signed before it can be deployed.
 
 <strong>On Linux:</strong>
 
-Create a release directory with release version `MCCI-Cricket-UI-Linux-<tag_name>`.
+Create a release directory with release version `cricket-<ver tag>-linux-installer.deb`
 
-Copy the exe 'UI3141-3201' from `destdir/exeout/` to release directory.
+Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
+the name of zipped folder should be  `cricket-<ver tag>-linux-installer.deb.zip`.
 
-Copy the icons folder to the release directory.
-
-Copy the doc folder to the release directory.
-
-Run `tar -cvzf ./MCCI-Cricket-UI-Linux-<tag>.tgz MCCI-Cricket-UI-Linux-<tag_name>`
+The Application Installer must be digitally signed before it can be deployed.
 
 <strong>On Mac:</strong>
 
-Create a release directory with release version `MCCI-Cricket-UI-Mac-<tag_name>`.
+Create a release directory with release version `cricket-<ver tag>-mac-installer.pkg`.
 
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `MCCI-Cricket-UI-Mac-<tag_name>.zip`.
+the name of zipped folder should be  `cricket-<ver tag>-mac-installer.pkg.zip`.
 
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 

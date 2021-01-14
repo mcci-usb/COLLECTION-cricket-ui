@@ -1,9 +1,9 @@
 ;*****************************************************************************
 ;
-; Module:  CricketUI-Windows.iss
+; Module:  Cricket-Windows.iss
 ;
 ; Function:
-;	Inno Setup install script for the Cricket UI-Installer distribution.
+;	Inno Setup install script for the Cricket-Installer distribution.
 ;
 ; Copyright notice:
 ;	This file copyright (C) 2020 by
@@ -25,11 +25,12 @@
 ; to compile this script, please install Inno Setup 5.5.9 or later, from
 ;   http://www.jrsoftware.org/isinfo.php
 
-#define MyAppName "Cricket UI"
+#define MyAppName "Cricket"
 #define MyAppVersion "2.0.0"
 #define MyAppPublisher "MCCI, Corporation"
 #define MyAppURL "https://mcci.com"
-#define MyAppExeName "CricketUI.exe"
+#define MyAppExeName "Cricket.exe"
+#define MyOrgName "MCCI"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -42,14 +43,14 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={autopf}\{#MyAppName}
+DefaultDirName={autopf}\{#MyOrgName}\{#MyAppName}
 DisableProgramGroupPage=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=..\AppInstaller
-OutputBaseFilename=CricketUI-Installer
-SetupIconFile=..\cricketui\src\icons\mcci_logo.ico
+OutputBaseFilename=cricket-{#MyAppVersion}-windows-installer
+SetupIconFile=..\cricket\src\icons\mcci_logo.ico
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -61,8 +62,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\cricketui\src\exeout\CricketUI.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\cricketui\src\icons\*"; DestDir: "{app}\icons"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\cricket\src\dist\Cricket.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\doc\*"; DestDir: "{app}\docs"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
