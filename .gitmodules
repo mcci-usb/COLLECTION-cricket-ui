@@ -5,3 +5,6 @@
 [submodule "cricket"]
 	path = cricket
 	url = git@gitlab-x.mcci.com:Seenivasan/cricket.git
+[submodule "Cricket"]
+	path = Cricket
+	url = https://github.com/mcci-usb/Cricket.git
