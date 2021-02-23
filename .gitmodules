@@ -1,0 +1,3 @@
+[submodule "Cricket"]
+	path = Cricket
+	url = https://github.com/mcci-usb/Cricket
