@@ -1,3 +1,4 @@
 [submodule "cricket"]
 	path = cricket
 	url = https://github.com/mcci-usb/Cricket
+	branches = master->master
