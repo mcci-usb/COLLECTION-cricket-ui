@@ -20,9 +20,9 @@ Unpack the tar file in a convenient directory, using <code>tar -xzf <em><strong>
 
 Then change directory to the <code><em><strong>destdir</strong></em></code>.
 
-<strong>From gitlab-x.mcci.com</strong>
+<strong>From github.mcci.com</strong>
 
-Clone the release tag repository from MCCI's gitlab-x server using the command:
+Clone the release tag repository from MCCI's github server using the command:
 
 ```shell
 git clone --recursive https://github.com/mcci-usb/COLLECTION-cricket-ui.git --branch <tag_name> --single-branch
