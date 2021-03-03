@@ -25,7 +25,7 @@ Then change directory to the <code><em><strong>destdir</strong></em></code>.
 Clone the release tag repository from MCCI's gitlab-x server using the command:
 
 ```shell
-git clone --recursive git@gitlab-x.mcci.com:Seenivasan/collection-cricket.git --branch <tag_name> --single-branch
+git clone --recursive https://github.com/mcci-usb/COLLECTION-cricket-ui.git --branch <tag_name> --single-branch
 ```
 For an example - Cloning for the release tag 'v1.0.0', replace the <tag_name> with v1.0.0 
 
@@ -131,7 +131,7 @@ Move to the directory `destdir/cricket/src/`
 pyinstaller Cricket-Windows.spec
 ```
 
-<strong>On Linux:</strong>
+<strong>On Linux and On Raspberry Pi:</strong>
 
 ```shell
 pyinstaller Cricket-Linux.spec
@@ -142,7 +142,6 @@ pyinstaller Cricket-Linux.spec
 ```shell
 pyinstaller Cricket-Mac.spec
 ```
-
 The executable 'Cricket' show up in `destdir/cricket/src/dist/`.
 
 ## Application Installer creation
@@ -164,7 +163,13 @@ Run the Package project file 'Cricket-Linux' which is in `destdir/installerScrip
 
 The App Installer 'cricket-<ver tag>-linux-installer' show up in `destdir/AppInstaller/`.
 
+<strong>On Raspberry Pi:</strong>
 
+Create Raspberry Pi deb package using Debreate Debian package builder
+
+Run the Package project file 'Cricket-Linux' which is in `destdir/installerScript/`.
+
+The App Installer 'cricket-<ver tag>-linux-installer' show up in `destdir/AppInstaller/`.
 
 <strong>On Mac:</strong>
 
@@ -194,6 +199,15 @@ Create a release directory with release version `cricket-<ver tag>-linux-install
 
 Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
 the name of zipped folder should be  `cricket-<ver tag>-linux-installer.deb.zip`.
+
+The Application Installer must be digitally signed before it can be deployed.
+
+<strong>On Raspberry Pi:</strong>
+
+Create a release directory with release version `cricket-<ver tag>-linux-installer.deb`
+
+Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
+the name of zipped folder should be  `cricket-<ver tag>-arch64-linux-installer.deb.tar.gz`.
 
 The Application Installer must be digitally signed before it can be deployed.
 
