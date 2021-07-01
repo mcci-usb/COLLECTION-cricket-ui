@@ -234,8 +234,6 @@ Because it might need separate distribution, the bootloader image tool is releas
 
 Git submodules are subject to their own copyrights and licenses; however overall collection is a combined work, and is copyrighted and subject to the overall license.
 
-Notwithstanding the above, the TweetNaCl and NaCl code in directories `pkgsrc/mcci_tweetnacl/extra/reference_tweetnacl` and `pkgsrc/mcci_tweetnacl/extra/reference_nacl` is all public domain (including MCCI contributions in those directories).
-
 ### Support Open Source Hardware and Software
 
 MCCI invests time and resources providing this open source code, please support MCCI and open-source hardware by purchasing products from MCCI, Adafruit and other open-source hardware/software vendors!
