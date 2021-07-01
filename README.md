@@ -225,6 +225,8 @@ The Mac application and the Application Installer must be signed and notarized b
 ### Copyright and License
 
 Except as explicitly noted, content created by MCCI in this repository tree is copyright (C) 2021, MCCI Corporation.
+  
+The Cricket UI is released under the terms of the attached [GNU General Public License, version 2](./LICENSE.md). `LICENSE.md` is taken directly from the [FSF website](http://www.gnu.org/licenses/old-licenses/gpl-2.0.md).
 
 Commercial licenses and commercial support are available from MCCI Corporation.
 
