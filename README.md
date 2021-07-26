@@ -9,6 +9,7 @@ This collection of repositories is used for building `Cricket`.
 - [Build procedure](#build-procedure)
 - [Application Installer creation](#application-installer-creation)
 - [Application release procedure](#application-release-procedure)
+- [Meta](#Meta)
 
 <!-- /TOC -->
 
