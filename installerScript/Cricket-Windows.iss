@@ -26,7 +26,7 @@
 ;   http://www.jrsoftware.org/isinfo.php
 
 #define MyAppName "Cricket"
-#define MyAppVersion "2.3.0"
+#define MyAppVersion "2.5.0"
 #define MyAppPublisher "MCCI, Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "Cricket.exe"
