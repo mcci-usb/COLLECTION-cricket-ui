@@ -45,7 +45,8 @@ Development environment
 * pyusb - 1.0.2
 * libusb - 1.0.22b9
 * libusb1 - 1.8
-* pyinstaller - 3.6 
+* pyinstaller - 4.7
+* matplotlib -1.16.0
 
 Download [python3.7.6](https://www.python.org/downloads/release/python-376/) and install
 
@@ -55,10 +56,11 @@ pip install pyserial
 pip install pyusb
 pip install libusb
 pip install libusb1
+pip install matplotlib
 pip install pyinstaller
 ```
 
-<strong>On Linux and Mac:</strong>
+<strong>On Linux:</strong>
 
 Development environment
 
@@ -71,7 +73,8 @@ Development environment
 * pyusb - 1.0.2
 * libusb - 1.0.22b9
 * libusb1 - 1.8
-* pyinstaller - 3.6  
+* pyinstaller - 4.7
+* matplotlib - 3.5
 * hidapi - 0.10.1  - Only for Mac OS
 
 ```shell
@@ -82,6 +85,7 @@ sudo pip3 install pyserial
 sudo pip3 install pyusb
 sudo pip3 install libusb
 sudo pip3 install libusb1
+sudo pip3 install matplotlib
 sudo pip3 install pyinstaller
 brew install hidapi - Only for Mac OS
 ```
@@ -89,6 +93,61 @@ brew install hidapi - Only for Mac OS
 Note:
 * If the installation of wxpython is not success, perform `sudo apt-get install build-essential libgtk-3-dev`
 * Some times the installation of wxpython takes longer time (>30 minutes).
+
+<strong>On Mac:</strong>
+
+Development environment
+
+* Mac OS - High Sierra 10.13.6 64 bit
+* Python - 3.7.0
+* wxpython - 4.0.7.post2
+* pyserial - 3.4
+* pyusb - 1.0.2
+* libusb - 1.0.22b9
+* libusb1 - 1.8
+* pyinstaller - 4.2
+* matplotlib - 3.2.2
+* hidapi - 0.10.1  - Only for Mac OS
+
+```shell
+sudo apt-get install python3
+sudo apt-get install python3-pip
+sudo pip3 install wxpython==4.0.7.post2
+sudo pip3 install pyserial
+sudo pip3 install pyusb
+brew install libusb
+sudo pip3 install libusb1
+sudo pip3 install matplotlib
+sudo pip3 install pyinstaller
+brew install hidapi - Only for Mac OS
+```
+
+<strong>On RaspberryPI:</strong>
+
+Development environment
+
+* Raspberry Pi OS - aarch64 in Ubuntu 20.04 bit
+* Python - 3.6.9
+* wxgtk-4.0
+* pyserial - 3.5
+* pyusb - 1.1.1
+* libusb - 1.0.23b7
+* libusb1 - 1.9
+* pyinstaller - 4.2
+* matplotlib - 1.14.0
+* hidapi - 0.10.1  - Only for Mac OS
+
+```shell
+sudo add-apt-repository ppa:swt-techie/wxpython4
+sudo apt-get update
+sudo apt-get install python3-wxgtk4.0
+sudo pip3 install pyserial
+sudo pip3 install pyusb
+sudo pip3 install libusb
+sudo pip3 install libusb1
+sudo pip3 install matplotlib
+sudo pip3 install pyinstaller
+```
 
 ## Interpret python source
 
@@ -105,6 +164,24 @@ python main.py
 This show up application UI window on screen
 
 <strong>On Linux and Mac:</strong>
+
+```shell
+python3 main.py
+```
+
+This show up application UI window on screen
+
+This show up application UI window on screen
+
+<strong>On Mac:</strong>
+
+```shell
+python3.6 main.py
+```
+
+This show up application UI window on screen
+
+<strong>On RaspberryPI:</strong>
 
 ```shell
 python3 main.py
