@@ -27,14 +27,14 @@
 
 #define MyAppDir "Cricket"
 #define MyAppName "Cricket UI"
-#define MyProductName "MCCI® Cricket UI"
+#define MyProductName "MCCIï¿½ Cricket UI"
 #define MyAppVersion "2.5.0"
 #define MyAppPublisher "MCCI Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "Cricket.exe"
-#define MyAppComments "MCCI® Cricket UI Installer"
+#define MyAppComments "MCCIï¿½ Cricket UI Installer"
 #define MyOrgName "MCCI"
-#define MyAppCopyRight "Copyright © 2022 MCCI Corporation"
+#define MyAppCopyRight "Copyright ï¿½ 2022 MCCI Corporation"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
@@ -80,7 +80,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\cricket\src\dist\Cricket\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\exeScript\dist\Cricket\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\doc\*"; DestDir: "{app}\docs"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
