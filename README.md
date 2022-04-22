@@ -7,7 +7,7 @@ This collection of repositories is used for building `Cricket`.
 - [Prerequisites for running or building](#prerequisites-for-running-or-building)
 - [Interpret python source](#interpret-python-source)
 - [Build procedure](#build-procedure)
-- [Cricket UI Exe maker](#Executable-file-creation)
+- [Cricket UI Exe maker](#Cricket-UI-Exe-maker)
 - [Application Installer creation](#application-installer-creation)
 - [Application release procedure](#application-release-procedure)
 - [Meta](#Meta)
@@ -307,7 +307,7 @@ The Application Installer must be digitally signed before it can be deployed.
 
 Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg`.
 
-Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
+Move the App Installer 'Cricket-Installer' into the release directory and zip (compress) it, 
 the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg.zip`.
 
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
