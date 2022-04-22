@@ -7,6 +7,7 @@ This collection of repositories is used for building `Cricket`.
 - [Prerequisites for running or building](#prerequisites-for-running-or-building)
 - [Interpret python source](#interpret-python-source)
 - [Build procedure](#build-procedure)
+- [Cricket UI Exe maker](#Executable-file-creation)
 - [Application Installer creation](#application-installer-creation)
 - [Application release procedure](#application-release-procedure)
 - [Meta](#Meta)
@@ -64,9 +65,9 @@ pip install pyinstaller
 
 Development environment
 
-* Linux OS - Ubuntu 20.04 64 bit
+* Linux OS - Ubuntu 16.04 64 bit
 * Python - 3.8.2
-* Mac OS - High Sierra 10.13.6 64 bit
+* Mac OS - Mac OS - Cataina V10.15.7 64 bit
 * Python - 3.7.0
 * wxpython - 4.0.7.post2
 * pyserial - 3.4
@@ -98,7 +99,7 @@ Note:
 
 Development environment
 
-* Mac OS - High Sierra 10.13.6 64 bit
+* Mac OS - Mac OS - Cataina V10.15.7 64 bit
 * Python - 3.7.0
 * wxpython - 4.0.7.post2
 * pyserial - 3.4
@@ -163,7 +164,7 @@ python main.py
 
 This show up application UI window on screen
 
-<strong>On Linux and Mac:</strong>
+<strong>On Linux:</strong>
 
 ```shell
 python3 main.py
@@ -171,20 +172,19 @@ python3 main.py
 
 This show up application UI window on screen
 
+<strong>On Raspberry PI3:</strong>
+
+```shell
+python3 main.py
+```
+
 This show up application UI window on screen
+
 
 <strong>On Mac:</strong>
 
 ```shell
 python3.6 main.py
-```
-
-This show up application UI window on screen
-
-<strong>On RaspberryPI:</strong>
-
-```shell
-python3 main.py
 ```
 
 This show up application UI window on screen
@@ -203,24 +203,38 @@ Placing of libusb-1.0.dll for exe creation
 
 Move to the directory `destdir/cricket/src/`
 
+## Cricket UI Exe maker
+
+EXE is a file extension for an executable file format. It makes distributing Cricket UI much easier. The exe produced by PyInstaller is standalone.
+
 <strong>On Windows:</strong>
+
+Run `pyinstaller` Cmd in `exeScript` directory.
 
 ```shell
 pyinstaller Cricket-Windows.spec
 ```
+The executable 'Cricket' show up in `exeScriptdir/dist/Cricket/`.
 
 <strong>On Linux and On Raspberry Pi:</strong>
+
+Run `pyinstaller` Cmd in `exeScript` directory.
 
 ```shell
 pyinstaller Cricket-Linux.spec
 ```
+The executable 'Cricket' show up in `exeScriptdir/dist/`.
 
 <strong>On Mac:</strong>
+
+Run `pyinstaller` Cmd in `exeScript` directory.
 
 ```shell
 pyinstaller Cricket-Mac.spec
 ```
-The executable 'Cricket' show up in `destdir/cricket/src/dist/`.
+
+The executable 'Cricket' show up in `exeScriptdir/dist/`.
+
 
 ## Application Installer creation
 
@@ -264,37 +278,37 @@ The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInsta
 
 <strong>On Windows:</strong>
 
-Create a release directory with release version `cricket-<ver tag>-windows-installer`
+Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Windows-Installer`
 
 Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `cricket-<ver tag>-windows-installer.zip`.
+the name of zipped folder should be  `MCCI-Cricket-UI-<ver tag>-Windows-Installer.zip`.
 
 The Application Installer must be digitally signed before it can be deployed.
 
 <strong>On Linux:</strong>
 
-Create a release directory with release version `cricket-<ver tag>-linux-installer.deb`
+Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Linux-Installer.deb`
 
 Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `cricket-<ver tag>-linux-installer.deb.zip`.
+the name of zipped folder should be  `MCCI-Cricket-UI-<ver tag>-Linux-Installer.tar.gz`.
 
 The Application Installer must be digitally signed before it can be deployed.
 
 <strong>On Raspberry Pi:</strong>
 
-Create a release directory with release version `cricket-<ver tag>-linux-installer.deb`
+Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Linux-Installer.deb`
 
 Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `cricket-<ver tag>-arch64-linux-installer.deb.tar.gz`.
+the name of zipped folder should be  `MCCI-Cricket-UI-<ver tag>-RPI-Linux-aarch64-Installer.tar.gz`.
 
 The Application Installer must be digitally signed before it can be deployed.
 
 <strong>On Mac:</strong>
 
-Create a release directory with release version `cricket-<ver tag>-mac-installer.pkg`.
+Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg`.
 
 Move the App Installer 'UI3141-3201-Installer' into the release directory and zip (compress) it, 
-the name of zipped folder should be  `cricket-<ver tag>-mac-installer.pkg.zip`.
+the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg.zip`.
 
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
