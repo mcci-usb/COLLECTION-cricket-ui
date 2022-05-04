@@ -34,7 +34,7 @@ VSVersionInfo(
         StringStruct(u'FileDescription', u'MCCI Cricket'),
         StringStruct(u'FileVersion', u'2.6.1.0'),
         StringStruct(u'InternalName', u'MCCI Cricket '),
-        StringStruct(u'LegalCopyright', u'Copyright (C) 2022 MCCI Corporation All Rights Reserved'),
+        StringStruct(u'LegalCopyright', u'Copyright © 2022 MCCI Corporation All Rights Reserved'),
         StringStruct(u'OriginalFilename', u'Cricket.exe'),
         StringStruct(u'ProductName', u'MCCI Cricket'),
         StringStruct(u'ProductVersion', u'2.6.1.0')])
