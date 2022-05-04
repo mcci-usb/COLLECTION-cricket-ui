@@ -27,14 +27,14 @@
 
 #define MyAppDir "Cricket"
 #define MyAppName "Cricket UI"
-#define MyProductName "MCCI Cricket UI"
+#define MyProductName "MCCI® Cricket UI"
 #define MyAppVersion "2.6.1"
 #define MyAppPublisher "MCCI Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "Cricket.exe"
-#define MyAppComments "MCCI Cricket UI Installer"
+#define MyAppComments "MCCI® Cricket UI Installer"
 #define MyOrgName "MCCI"
-#define MyAppCopyRight "Copyright �2022 MCCI Corporation"
+#define MyAppCopyRight "Copyright © 2022 MCCI Corporation"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
