@@ -510,7 +510,7 @@
 			<key>USE_HFS+_COMPRESSION</key>
 			<false/>
 			<key>VERSION</key>
-			<string>2.6.1</string>
+			<string>3.0.0-Pre1</string>
 		</dict>
 		<key>PROJECT_COMMENTS</key>
 		<dict>
@@ -696,7 +696,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>MCCI-Cricket-UI-v2.6.1-Mac-Installer</string>
+			<string>MCCI-Cricket-UI-v3.0.0-Pre1-Mac-Installer</string>
 			<key>PAYLOAD_ONLY</key>
 			<false/>
 		</dict>
