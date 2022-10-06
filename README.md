@@ -9,6 +9,7 @@ This collection of repositories is used for building `Cricket`.
 - [Build procedure](#build-procedure)
 - [Cricket UI Exe maker](#Cricket-UI-Exe-maker)
 - [Application Installer creation](#application-installer-creation)
+- [Installation steps in Linux](#installation-steps-in-Linux)
 - [Application release procedure](#application-release-procedure)
 - [Meta](#Meta)
 
@@ -65,10 +66,8 @@ pip install pyinstaller
 
 Development environment
 
-* Linux OS - Ubuntu 16.04 64 bit
-* Python - 3.8.2
-* Mac OS - Mac OS - Cataina V10.15.7 64 bit
-* Python - 3.7.0
+* Linux OS - Ubuntu 20.04 64 bit
+* Python - 3.8.10
 * wxpython - 4.0.7.post2
 * pyserial - 3.4
 * pyusb - 1.0.2
@@ -273,6 +272,12 @@ Run the Package project file 'Cricket-Mac' which is in `destdir/installerScript/
 
 The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInstaller/`.
 
+## Installation steps in Linux
+
+* download the MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
+* extract the Linux installer file.
+* open the Terminal at .deb file location.
+* install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
 
 ## Application release procedure
 
