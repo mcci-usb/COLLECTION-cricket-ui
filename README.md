@@ -33,6 +33,11 @@ For an example - Cloning for the release tag 'v1.0.0', replace the <tag_name> wi
 
 Then change directories to the top level of the cloned repository.
 
+Clone the Sub branch of release tag repository from MCCI's github server using the command:
+
+```
+git clone -b V3.0.0-Pre3 --recursive git@github.com:mcci-usb/COLLECTION-cricket-ui.git
+```
 ## Prerequisites for running or building
 
 <strong>On Windows:</strong>
