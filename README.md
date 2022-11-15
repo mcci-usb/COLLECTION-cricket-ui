@@ -6,7 +6,6 @@ This collection of repositories is used for building `Cricket`.
 - [Installing Sources](#installing-sources)
 - [Prerequisites for running or building](#prerequisites-for-running-or-building)
 - [Interpret python source](#interpret-python-source)
-- [Build procedure](#build-procedure)
 - [Cricket UI Exe maker](#Cricket-UI-Exe-maker)
 - [Application Installer creation](#application-installer-creation)
 - [Installation steps in Linux](#installation-steps-in-Linux)
