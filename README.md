@@ -1,6 +1,7 @@
-# COLLECTION-Cricket
+# MCCI Cricket UI Releases
 
-This collection of repositories is used for building `Cricket`.
+This collection of repositories is used for building the MCCI `Cricket` UI for MCCI USB Switches. Complete releases are also available here.
+
 <!-- TOC depthFrom:2 updateOnSave:true -->
 
 - [Installing Sources](#installing-sources)
