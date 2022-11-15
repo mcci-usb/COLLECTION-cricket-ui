@@ -188,20 +188,6 @@ python3.6 main.py
 
 This show up application UI window on screen
 
-
-## Build procedure
-
-<strong>On Windows and Linux:</strong>
-
-Placing of libusb-1.0.dll for exe creation
-
-* Move to the Python installation directory
-* Copy the libusb-1.0.dll from `Python/Python37-32/Lib/site-packages/libusb/_platform/_windows/x86/`
-* Paste the dll to the directory `destdir/cricket/src/`
-* Paste the dll to the OS directory `Windows/SysWOW64/`
-
-Move to the directory `destdir/cricket/src/`
-
 ## Cricket UI Exe maker
 
 EXE is a file extension for an executable file format. It makes distributing Cricket UI much easier. The exe produced by PyInstaller is standalone.
