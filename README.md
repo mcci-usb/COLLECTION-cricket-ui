@@ -217,16 +217,16 @@ This show up application UI window on screen
 ## Cricket API Library
 
 `cricketlib` api is a python library this library intract with `Cricekt UI`.
-download or clone the repository from here [crickelib](#https://github.com/mcci-usb/cricketlib).
+download or clone the repository from here [crickelib](https://github.com/mcci-usb/cricketlib).
 
-To install the library using below command and [install package](#https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
+To install the library using below command and [install package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
 ```shell
 python setup.py install
 ```
 Please navigate to dist/ directory and you will find the files .egg file. Example: cricketapi-1.0.0-py3.7.egg
 ### how to use the package
 
-here provide the REAMDME.md information about cricket lib please follow the instrunctions [README](#https://github.com/mcci-usb/cricketlib#package-usage)
+here provide the REAMDME.md information about cricket lib please follow the instrunctions [README](https://github.com/mcci-usb/cricketlib#package-usage)
 
 ## Cricket UI Exe maker
 
