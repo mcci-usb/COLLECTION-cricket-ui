@@ -1,27 +1,54 @@
 # COLLECTION-Cricket
 
-This collection of repositories is used for building `Cricket`.
+This collection of repositories is used for building `Cricket UI`.
+<!--
+  This TOC uses the VS Code markdown TOC extension AlanWalk.markdown-toc.
+  We strongly recommend updating using VS Code, the markdown-toc extension and the
+  bierner.markdown-preview-github-styles extension. Note that if you are using
+  VS Code 1.29 and Markdown TOC 1.5.6, https://github.com/AlanWalk/markdown-toc/issues/65
+  applies -- you must change your line-ending to some non-auto value in Settings>
+  Text Editor>Files.  `\n` works for me.
+-->
+<!-- markdownlint-disable MD033 MD004 -->
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
 <!-- TOC depthFrom:2 updateOnSave:true -->
 
+- [Introduction](#introduction)
 - [Installing Sources](#installing-sources)
+
 - [Prerequisites for running or building](#prerequisites-for-running-or-building)
+
 - [Interpret python source](#interpret-python-source)
+- [Cricket API Library](#cricket-api-library)
+
+  - [how to use the package](#how-to-use)
+
 - [Cricket UI Exe maker](#Cricket-UI-Exe-maker)
+
 - [Application Installer creation](#application-installer-creation)
-- [Installation steps in Linux](#installation-steps-in-Linux)
+
+- [Application Installation steps](#application-installation-steps)
+  - [Windows](#windows)
+  - [Linux](#linux)
+  - [Mac](#mac)
+
+- [Additional Documentation](#additional-documentation)
+
+  - [PDF/Word Documentation](#pdfword-documentation)
+
 - [Application release procedure](#application-release-procedure)
+
 - [Meta](#Meta)
 
 <!-- /TOC -->
+<!-- markdownlint-restore -->
+<!-- Due to a bug in Markdown TOC, the table is formatted incorrectly if tab indentation is set other than 4. Due to another bug, this comment must be *after* the TOC entry. -->
+
+## Introduction
+This repository is collection of build environement for Cricket UI [Cricket UI](https://github.com/mcci-usb/Cricket).
 
 ## Installing Sources
-
-<strong>From a tar file</strong>
-
-Unpack the tar file in a convenient directory, using <code>tar -xzf <em><strong>tarfile.tgz</strong></em> -C <em><strong>destdir</strong></em></code>.
-
-Then change directory to the <code><em><strong>destdir</strong></em></code>.
-
 <strong>From github.mcci.com</strong>
 
 Clone the release tag repository from MCCI's github server using the command:
@@ -187,6 +214,20 @@ python3.6 main.py
 
 This show up application UI window on screen
 
+## Cricket API Library
+
+`cricketlib` api is a python library this library intract with `Cricekt UI`.
+download or clone the repository from here [crickelib](#https://github.com/mcci-usb/cricketlib).
+
+To install the library using below command and [install package](#https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
+```shell
+python setup.py install
+```
+Please navigate to dist/ directory and you will find the files .egg file. Example: cricketapi-1.0.0-py3.7.egg
+### how to use the package
+
+here provide the REAMDME.md information about cricket lib please follow the instrunctions [README](#https://github.com/mcci-usb/cricketlib#package-usage)
+
 ## Cricket UI Exe maker
 
 EXE is a file extension for an executable file format. It makes distributing Cricket UI much easier. The exe produced by PyInstaller is standalone.
@@ -257,12 +298,28 @@ Run the Package project file 'Cricket-Mac' which is in `destdir/installerScript/
 
 The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInstaller/`.
 
-## Installation steps in Linux
+## Application Installation steps
+
+<strong>On Window :</strong>
+
+Create Linux deb package using Debreate Debian package builder.
+
+<strong>On Linux :</strong>
 
 * download the MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
 * extract the Linux installer file.
 * open the Terminal at .deb file location.
 * install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
+
+<strong>On Mac :</strong>
+
+Create Linux deb package using Debreate Debian package builder.
+
+## Additional Documentation
+### PDF/Word Documentation
+
+The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552h_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557k_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
+
 
 ## Application release procedure
 
