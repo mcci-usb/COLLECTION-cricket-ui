@@ -16,29 +16,19 @@ This collection of repositories is used for building `Cricket UI`.
 
 - [Introduction](#introduction)
 - [Installing Sources](#installing-sources)
-
 - [Prerequisites for running or building](#prerequisites-for-running-or-building)
-
 - [Interpret python source](#interpret-python-source)
 - [Cricket API Library](#cricket-api-library)
-
   - [how to use the package](#how-to-use)
-
 - [Cricket UI Exe maker](#Cricket-UI-Exe-maker)
-
 - [Application Installer creation](#application-installer-creation)
-
 - [Application Installation steps](#application-installation-steps)
   - [Windows](#windows)
   - [Linux](#linux)
   - [Mac](#mac)
-
 - [Additional Documentation](#additional-documentation)
-
   - [PDF/Word Documentation](#pdfword-documentation)
-
 - [Application release procedure](#application-release-procedure)
-
 - [Meta](#Meta)
 
 <!-- /TOC -->
