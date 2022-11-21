@@ -292,7 +292,7 @@ The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInsta
 
 <strong>On Window :</strong>
 
-Create Linux deb package using Debreate Debian package builder.
+The `doc` directory contain installation for Cricket UI step by step procedure [Windows-Installation-procedure](doc/MCCI-Cricket-UI-Installation-Procedure-Steps.pdf)
 
 <strong>On Linux :</strong>
 
