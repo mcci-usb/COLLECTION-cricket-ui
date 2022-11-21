@@ -292,9 +292,11 @@ The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInsta
 
 <strong>On Window :</strong>
 
-The `doc` directory contain installation for Cricket UI step by step procedure [Windows-Installation-procedure](doc/MCCI-Cricket-UI-Installation-Procedure-Steps.pdf)
+The `doc` directory contain installation for Cricket UI step by step procedure [Windows-Installation-Steps](doc/MCCI-Cricket-UI-Windows-Installation-Steps.pdf)
 
 <strong>On Linux :</strong>
+
+The `doc` directory contain installation for Cricket UI step by step procedure [Linux-Installation-Steps](doc/MCCI-Cricket-UI-Linux-Installation-Steps.pdf)
 
 * download the MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
 * extract the Linux installer file.
