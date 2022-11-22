@@ -34,7 +34,9 @@ This collection of repositories is used for building `Cricket UI`.
   - [PDF/Word Documentation](#pdfword-documentation)
   - [Known bugs and issues](#known-bugs-and-issues)
 - [Application release procedure](#application-release-procedure)
-- [Meta](#Meta)
+- [Release History](#release-history)
+- [Meta](#meta)
+  - [Copyright and License](#copyright-and-license)
 
 <!-- /TOC -->
 <!-- markdownlint-restore -->
@@ -365,6 +367,72 @@ Move the App Installer 'Cricket-Installer' into the release directory and zip (c
 the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg.zip`.
 
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
+
+## Release History
+
+- v2.7.0 is a patch release it contains.
+  - Cricket UI fails to launch on ubuntu 20.04 and 22.04
+  
+- v2.6.1 is a patch release.
+  - update the version tag [#75](https://github.com/mcci-usb/Cricket/commit/60b52983a71e6fd05813e7bd727a9ba21e261eb8)
+- v2.6.0 is a patch release.
+  - Device search dialog goes blank until complete the search [#70](https://github.com/mcci-usb/Cricket/commit/7fe8957ab618dff0510e72076c24afb81a85fb51)
+  - App not responding when other com port devices(that are not MCCI USB Switches) are attached to the system USB & Slow search for switches [#59](https://github.com/mcci-usb/Cricket/commit/829d85818beb533114423fbdb848013c3c66eb0a) [#65](https://github.com/mcci-usb/Cricket/commit/829d85818beb533114423fbdb848013c3c66eb0a)
+  - Minimizing and maximizing the application [#60](https://github.com/mcci-usb/Cricket/commit/f6bb6a8a79cf8ccf69931c288e1e417574cf8fe4)
+  - Disable VBUS V/I monitor if switch doesn't support [#63](https://github.com/mcci-usb/Cricket/commit/2c569d5131f1f04fa3e802f67e04ded35b80b802)
+  - misspelling in the log window instead of Switch it was spelled as Swicth [#61](https://github.com/mcci-usb/Cricket/commit/1344384596efdfd3288ef40bea38c8149b2039f6).
+- v2.5.0 is major release it Contains the following changes
+  -	Feature added – Plotting of VBUS Volt and
+   Current `VBUS V/I Plotting` [#18 #48 #52](https://github.com/mcci-usb/Cricket/commit/eb30f3b4a2e1da2c21db470315a8489b19d7b87d).
+  - USB Tree view removed and merged with Log Window `Replaced USB Tree view window to Log Window` [#24](https://github.com/mcci-usb/Cricket/issues/24).
+  - Perform device Search in advance, Device searching automatically or manually searching the device `USB Switch Scanning` [#30](https://github.com/mcci-usb/Cricket/issues/30).
+  - Auto mode improved (Port selection
+  provided) `Port(s) selection` [#22](https://github.com/mcci-usb/Cricket/issues/22) also with out port selection start auto pop-pp window appears `PopUp window` [`#Auto Popupwindow`](https://github.com/mcci-usb/Cricket/commit/f44494cc7b4295b10480be373afbf4987dc6383f).
+  - Linux machine IP scanning issue fixed `Scanning ip address from Linux machine` [#20](https://github.com/mcci-usb/Cricket/issues/20).
+  - The word Model replace by MCCI USB Switch `Replace MCCI USB Switch` [#27](https://github.com/mcci-usb/Cricket/issues/27).
+  - UI not responding issued fixed `UI not Responding` [#28](https://github.com/mcci-usb/Cricket/issues/28).
+  - Do not disable Manage Model>Connect when connected allow the user to directly connect to another switch `Connect menu` [#30](https://github.com/mcci-usb/Cricket/commit/d3077b5b2925553a505955d5721673705438d464).
+  - Enhancement – Highlight the name of the     Switch `Highlet Switch` [#29](https://github.com/mcci-usb/Cricket/issues/29).
+  - added Finished count in Loop Mode `Finished Count` [#23](https://github.com/mcci-usb/Cricket/issues/23).
+  - Persistence of last connect `Last device connect`[#43](https://github.com/mcci-usb/Cricket/commit/2bf73805fe274e27fb775b18c4bc639828a60347)
+  - Application hangs when closing the application on macOS using Quit command [#40](https://github.com/mcci-usb/Cricket/commit/2e34f30771b6dbfcf5c6bc7de9da4db7e0b7f8bb).
+  - click on the settings menu, then click on the "Switch Control Computer" sub menu, this should display a dialog for searching the Computer over the network based on the port assigned for that. But dialog does not appearing `SCC and THC Setting menu search dialog not displayed - In Mac Catalian and Monterey` [#41](https://github.com/mcci-usb/Cricket/commit/e114a2bf9bb13968388f2e898b21dc2c6913edbd).
+  - UI panel are not centralized `fixed UI in Central on window` [45](https://github.com/mcci-usb/Cricket/commit/755384805f0d05bce7fff4d0089f664812314f94).
+  - Port selection should be disable state once the Auto mode execution get started, then the required ports are should be enabled when auto mode gets stopped `Disable the port selection when auto mode is under execution` [#50](https://github.com/mcci-usb/Cricket/commit/e45dac8e266632c75c72a7e88318fcec9a309f3c)
+  - update Cricket UI Windows.spec file with One directory file `Update Cricket-Windows.spec file` [#47](https://github.com/mcci-usb/Cricket/commit/e6cfdb6fcab0714af319b37243b0895af50a4dfc).
+
+  - Update year in the copy right info `Update copy right info in About dialog` [#53](https://github.com/mcci-usb/Cricket/commit/3530af09d231fc8ae9ffc6f47fd29bcfea5a329e)
+
+- v2.4.0 is major release; changes are significant to networking using TCP/IP.
+  - Add new feature support for Three computer System and Two Computer `Two and Three Computer system through Networking` [#14](https://github.com/mcci-usb/Cricket/pull/14/commits/931f867960b375b07b980b61e39ab32bba4dfb35).
+
+- v2.3.0 is major release has following changes.
+  - Add support for MCCI Switch 2301 USB Connection Exerciser ` MCCI USB Switch 2301 ` [#4](https://github.com/mcci-usb/Cricket/pull/4).
+
+- v2.2.0 has following changes:
+
+  - Python implemented to Pep8 coding standard ` MCCI USB Switch 2301 ` [#5](https://github.com/mcci-usb/Cricket/pull/5).
+  - Package release for Raspberry Pi OS ubuntu18.04
+
+- v2.0.0 is a major release.
+
+  - Interface for USB Switch 2101 added
+  - Radio buttons for Port switching replaced by  image added buttons,
+  - Duty parameter added in auto mode,
+  - Until stopped and Port selection option added to the Loop mode and separate panel for Auto mode added,
+  - adding USB speed info, increase port switching speed.
+
+- v1.2.0 has following changes
+
+  - Host Controller issue and Delay override
+
+- v1.0.2 is a changes to menu option
+
+  - Mac Menu Update
+
+- v1.0.0 initial release of cricket UI
+
+  - Initial Release
 
 ## Meta
 
