@@ -1,6 +1,10 @@
 # COLLECTION-Cricket
 
 This collection of repositories is used for building `Cricket UI`.
+
+[![Git release](https://img.shields.io/badge/release-v2.7.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v2.7.0-1-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/compare/v2.7.0...master)
+
+**Contents:**
 <!--
   This TOC uses the VS Code markdown TOC extension AlanWalk.markdown-toc.
   We strongly recommend updating using VS Code, the markdown-toc extension and the
@@ -19,15 +23,16 @@ This collection of repositories is used for building `Cricket UI`.
 - [Prerequisites for running or building](#prerequisites-for-running-or-building)
 - [Interpret python source](#interpret-python-source)
 - [Cricket API Library](#cricket-api-library)
-  - [how to use the package](#how-to-use)
-- [Cricket UI Exe maker](#Cricket-UI-Exe-maker)
+  - [How to use the package](#how-to-use-the-package)
+- [Cricket UI Exe maker](#cricket-ui-exe-maker)
 - [Application Installer creation](#application-installer-creation)
 - [Application Installation steps](#application-installation-steps)
-  - [Windows](#windows)
-  - [Linux](#linux)
-  - [Mac](#mac)
+  - [Windows Installation Document](#windows-installation-document)
+  - [Linux Installation Document](#linux-installation-document)
+  - [Mac Installation Document](#mac-installation-document)
 - [Additional Documentation](#additional-documentation)
   - [PDF/Word Documentation](#pdfword-documentation)
+  - [Known bugs and issues](#known-bugs-and-issues)
 - [Application release procedure](#application-release-procedure)
 - [Meta](#Meta)
 
@@ -36,9 +41,11 @@ This collection of repositories is used for building `Cricket UI`.
 <!-- Due to a bug in Markdown TOC, the table is formatted incorrectly if tab indentation is set other than 4. Due to another bug, this comment must be *after* the TOC entry. -->
 
 ## Introduction
-This repository is collection of build environement for Cricket UI [Cricket UI](https://github.com/mcci-usb/Cricket).
+
+This repository is collection of build environement for [Cricket UI](https://github.com/mcci-usb/Cricket).
 
 ## Installing Sources
+
 <strong>From github.mcci.com</strong>
 
 Clone the release tag repository from MCCI's github server using the command:
@@ -46,6 +53,7 @@ Clone the release tag repository from MCCI's github server using the command:
 ```shell
 git clone --recursive https://github.com/mcci-usb/COLLECTION-cricket-ui.git --branch <tag_name> --single-branch
 ```
+
 For an example - Cloning for the release tag 'v1.0.0', replace the <tag_name> with v1.0.0 
 
 Then change directories to the top level of the cloned repository.
@@ -107,6 +115,7 @@ brew install hidapi - Only for Mac OS
 ```
 
 Note:
+
 * If the installation of wxpython is not success, perform `sudo apt-get install build-essential libgtk-3-dev`
 * Some times the installation of wxpython takes longer time (>30 minutes).
 
@@ -195,7 +204,6 @@ python3 main.py
 
 This show up application UI window on screen
 
-
 <strong>On Mac:</strong>
 
 ```shell
@@ -210,11 +218,14 @@ This show up application UI window on screen
 download or clone the repository from here [crickelib](https://github.com/mcci-usb/cricketlib).
 
 To install the library using below command and [install package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
+
 ```shell
 python setup.py install
 ```
+
 Please navigate to dist/ directory and you will find the files .egg file. Example: cricketapi-1.0.0-py3.7.egg
-### how to use the package
+
+### How to use the package
 
 here provide the REAMDME.md information about cricket lib please follow the instrunctions [README](https://github.com/mcci-usb/cricketlib#package-usage)
 
@@ -229,6 +240,7 @@ Run `pyinstaller` Cmd in `exeScript` directory.
 ```shell
 pyinstaller Cricket-Windows.spec
 ```
+
 The executable 'Cricket' show up in `exeScriptdir/dist/Cricket/`.
 
 <strong>On Linux and On Raspberry Pi:</strong>
@@ -238,6 +250,7 @@ Run `pyinstaller` Cmd in `exeScript` directory.
 ```shell
 pyinstaller Cricket-Linux.spec
 ```
+
 The executable 'Cricket' show up in `exeScriptdir/dist/`.
 
 <strong>On Mac:</strong>
@@ -250,7 +263,6 @@ pyinstaller Cricket-Mac.spec
 
 The executable 'Cricket' show up in `exeScriptdir/dist/`.
 
-
 ## Application Installer creation
 
 <strong>On Windows:</strong>
@@ -260,7 +272,6 @@ Download [Inno Setup Compiler](https://jrsoftware.org/isdl.php#stable) and insta
 Run the Inno Setup Script file 'Cricket-Windows' which is in `destdir/installerScript/`.
 
 The App Installer 'cricket-<ver tag>-windows-installer' show up in `destdir/AppInstaller/`.
-
 
 <strong>On Linux:</strong>
 
@@ -290,11 +301,11 @@ The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInsta
 
 ## Application Installation steps
 
-<strong>On Window :</strong>
+### Windows Installation Document
 
 The `doc` directory contain installation for Cricket UI step by step procedure [Windows-Installation-Steps](doc/MCCI-Cricket-UI-Windows-Installation-Steps.pdf)
 
-<strong>On Linux :</strong>
+## Linux Installation Document
 
 The `doc` directory contain installation for Cricket UI step by step procedure [Linux-Installation-Steps](doc/MCCI-Cricket-UI-Linux-Installation-Steps.pdf)
 
@@ -303,15 +314,19 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 * open the Terminal at .deb file location.
 * install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
 
-<strong>On Mac :</strong>
+## Mac Installation Document
 
 Create Linux deb package using Debreate Debian package builder.
 
 ## Additional Documentation
+
 ### PDF/Word Documentation
 
 The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552h_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557k_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
 
+### Known bugs and issues
+
+See the list of bugs at [`mcci-usb/cricket-ui`](https://github.com/mcci-usb/Cricket/issues).
 
 ## Application release procedure
 
@@ -346,7 +361,7 @@ The Application Installer must be digitally signed before it can be deployed.
 
 Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg`.
 
-Move the App Installer 'Cricket-Installer' into the release directory and zip (compress) it, 
+Move the App Installer 'Cricket-Installer' into the release directory and zip (compress) it,
 the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg.zip`.
 
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
