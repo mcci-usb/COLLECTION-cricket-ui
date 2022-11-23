@@ -29,6 +29,7 @@ This collection of repositories is used for building `Cricket UI`.
 - [Application Installation steps](#application-installation-steps)
   - [Windows Installation Document](#windows-installation-document)
   - [Linux Installation Document](#linux-installation-document)
+  - [RPI Installation Document](#rpi-installation-document)
   - [Mac Installation Document](#mac-installation-document)
 - [Additional Documentation](#additional-documentation)
   - [PDF/Word Documentation](#pdfword-documentation)
@@ -305,9 +306,15 @@ The App Installer 'cricket-<ver tag>-mac-installer' show up in `destdir/AppInsta
 
 ### Windows Installation Document
 
+* download the MCCI-Cricket-UI-Windows-Installer.zip file from Github See here [Cricket Window Installer](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases)
+* Extarct the zip file
+* Double cilck on installer its explorer the wizard file
+* "Select Destination Location" Click Next -> "Select Additional Task" Click Next -> "Ready to Install" Click Install
+
+For more info, see
 The `doc` directory contain installation for Cricket UI step by step procedure [Windows-Installation-Steps](doc/MCCI-Cricket-UI-Windows-Installation-Steps.pdf)
 
-## Linux Installation Document
+### Linux Installation Document
 
 The `doc` directory contain installation for Cricket UI step by step procedure [Linux-Installation-Steps](doc/MCCI-Cricket-UI-Linux-Installation-Steps.pdf)
 
@@ -316,9 +323,23 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 * open the Terminal at .deb file location.
 * install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
 
-## Mac Installation Document
+### RPI Installation Document
 
-Create Linux deb package using Debreate Debian package builder.
+The `doc` directory contain installation for Cricket UI step by step procedure [RPI-Installation-Steps](doc/MCCI-Cricket-UI-RPI-Installation-Steps.pdf)
+
+* download MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
+* extract the Linux installer file.
+* open the Terminal at .deb file location.
+* install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
+
+### Mac Installation Document
+
+The `doc` directory contain installation for Cricket UI step by step procedure [Mac-Installation-Steps](doc/MCCI-Cricket-UI-Mac-Installation-Steps.pdf)
+
+* download MCCI Cricket UI Mac installer from Collections-cricket-ui releases.
+* extract the Mac installer file.
+* double click on Application file to explore the installer window.
+* click on "Continue" -> "Select a Destination" where Software installed -> "Install" -> "The Onstallation was successful.
 
 ## Additional Documentation
 
