@@ -332,13 +332,8 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 
 For more info about installation procedure see,
 
-* download MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
-* extract the Linux installer file.
-* open the Terminal at .deb file location.
-* install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
-
-* download MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
-* extract the Linux installer file.
+* download MCCI Cricket UI RPI installer from Collections-cricket-ui releases.
+* extract the RPI installer file.
 * open the Terminal at .deb file location.
 * install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
 
@@ -371,7 +366,7 @@ See the list of bugs at [`mcci-usb/cricket-ui`](https://github.com/mcci-usb/Cric
 
 Create a release directory with release version `MCCI-Cricket-UI-<ver tag>-Windows-Installer`
 
-Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress) it, 
+Move the App Installer 'cricket-<ver tag>-windows-installer' into the release directory and zip (compress)
 the name of zipped folder should be  `MCCI-Cricket-UI-<ver tag>-Windows-Installer.zip`.
 
 The Application Installer must be digitally signed before it can be deployed.
