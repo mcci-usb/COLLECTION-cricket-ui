@@ -20,6 +20,7 @@ a.datas += [('/icons/btn_on.png', '../Cricket/src/icons/btn_on.png', "DATA")]
 a.datas += [('/icons/mcci_logo.png', '../Cricket/src/icons/mcci_logo.png', "DATA")]
 a.datas += [('/icons/mcci_logo.ico', '../Cricket/src/icons/mcci_logo.ico', "DATA")]
 a.datas += [('/icons/wave.png', '../Cricket/src/icons/wave.png', "DATA")]
+a.datas += [('/icons/noswitch.png', '../Cricket/src/icons/noswitch.png', "DATA")]
 
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
@@ -29,7 +30,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='Cricket',
+          name='cricket',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,

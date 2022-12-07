@@ -22,6 +22,7 @@ a.datas += [('..\\Cricket\\src\\icons\\mcci_logo.png','\\icons\\mcci_logo.png', 
 a.datas += [('..\\Cricket\\src\\icons\\btn_on.png','\\icons\\btn_on.png', "DATA")]
 a.datas += [('..\\Cricket\\src\\icons\\btn_off.png','\\icons\\btn_off.png', "DATA")]
 a.datas += [('..\\Cricket\\src\\icons\\wave.png','\\icons\\wave.png', "DATA")]
+a.datas += [('..\\Cricket\\src\\icons\\noswitch.png','\\icons\\noswitch.png', "DATA")]
 
 
 pyz = PYZ(a.pure, a.zipped_data,
