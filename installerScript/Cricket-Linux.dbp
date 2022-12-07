@@ -1,7 +1,7 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: Cricket
-Version: 2.7.0
+Version: 3.0.0
 Maintainer: Seenivasan <seenivasanv@mcci.com>
 Section: embedded
 Homepage: www.mcci.com
@@ -12,11 +12,11 @@ Description: User Interface for controlling MCCI USB Switches  and Connection Ex
 <</CTRL>>
 <<FILES>>
 1
-/home/seenivasan/seeni/cricket/doc/950001557h_(MCCI-Cricket-UI-Release-Notes) .pdf* -> 950001557h_(MCCI-Cricket-UI-Release-Notes) .pdf -> /usr/bin/doc
-/home/seenivasan/seeni/cricket/doc/950001552i_(MCCI-Cricket-UI-User-Guide).pdf* -> 950001552h_(MCCI-Cricket-UI-User-Guide).pdf -> /usr/bin/doc
-/home/seenivasan/seeni/cricket/cricket/src/dist/Cricket* -> Cricket -> /usr/bin
-/home/seenivasan/seeni/cricket/cricket/src/icons/mcci_logo.ico -> mcci_logo.ico -> /usr/bin/icons
-/home/seenivasan/seeni/cricket/devrules/99-CricketUI.rules* -> 99-CricketUI.rules -> /etc/udev/rules.d
+/home/cricket/doc/950001557h_(MCCI-Cricket-UI-Release-Notes) .pdf* -> 950001557h_(MCCI-Cricket-UI-Release-Notes) .pdf -> /usr/bin/doc
+/home/cricket/doc/950001552i_(MCCI-Cricket-UI-User-Guide).pdf* -> 950001552h_(MCCI-Cricket-UI-User-Guide).pdf -> /usr/bin/doc
+/home/cricket/cricket/src/dist/Cricket* -> Cricket -> /usr/bin
+/home/cricket/cricket/src/icons/mcci_logo.ico -> mcci_logo.ico -> /usr/bin/icons
+/home/cricket/devrules/99-CricketUI.rules* -> 99-CricketUI.rules -> /etc/udev/rules.d
 <</FILES>>
 <<SCRIPTS>>
 <<PREINST>>
@@ -42,7 +42,7 @@ Description: User Interface for controlling MCCI USB Switches  and Connection Ex
 <<MENU>>
 1
 Name=Cricket
-Version=1.0
+Version=3.0
 Exec=Cricket
 Icon=/usr/bin/icons/mcci_logo.ico
 Type=Application
