@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket UI`.
 
-[![Git release](https://img.shields.io/badge/release-v2.7.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v2.7.0-1-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/compare/v2.7.0...master)
+[![Git release](https://img.shields.io/badge/release-v3.0.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v3.0.0-7-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/compare/V3.0.0-Pre3...master)
 
 **Contents:**
 <!--
@@ -72,8 +72,6 @@ Development environment
 * wxpython - 4.0.7.post2
 * pyserial - 3.4
 * pyusb - 1.0.2
-* libusb - 1.0.22b9
-* libusb1 - 1.8
 * pyinstaller - 4.7
 * matplotlib -1.16.0
 
@@ -83,8 +81,7 @@ Download [python3.7.6](https://www.python.org/downloads/release/python-376/) and
 pip install wxpython==4.0.7.post2
 pip install pyserial
 pip install pyusb
-pip install libusb
-pip install libusb1
+pip install hidapi==0.10.1
 pip install matplotlib
 pip install pyinstaller
 ```
@@ -218,9 +215,9 @@ This show up application UI window on screen
 ## Cricket API Library
 
 `cricketlib` api is a python library this library intract with `Cricekt UI`.
-download or clone the repository from here [crickelib](https://github.com/mcci-usb/cricketlib).
+download or clone the repository from [here](https://github.com/mcci-usb/cricketlib).
 
-To install the library using below command and [install package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
+To install the library [package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
 
 ```shell
 python setup.py install
@@ -321,7 +318,7 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 * download the MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
 * extract the Linux installer file.
 * open the Terminal at .deb file location.
-* install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
+* install the Cricket_3.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_3.0.0_all.deb`
 
 For more info about installation procedure see,
 The `doc` directory contain installation for Cricket UI step by step procedure [Linux-Installation-Steps](doc/MCCI-Cricket-UI-Linux-Installation-Steps.pdf)
@@ -335,7 +332,7 @@ For more info about installation procedure see,
 * download MCCI Cricket UI RPI installer from Collections-cricket-ui releases.
 * extract the RPI installer file.
 * open the Terminal at .deb file location.
-* install the Cricket_2.7.0_all.deb using the cmd of `sudo dpkg -i Cricket_2.7.0_all.deb`
+* install the Cricket_3.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_3.0.0_all.deb`
 
 ### Mac Installation Document
 
@@ -400,6 +397,12 @@ The Mac application and the Application Installer must be signed and notarized b
 
 ## Release History
 
+- v3.0.0 is major release  it Contains the following changes
+  - supporting of Thunderbolt device tree view [#78](https://github.com/mcci-usb/Cricket/commit/c0c5404794678247bcc943e77c2266a53113c875)
+  - DUT related issues [#90](https://github.com/mcci-usb/Cricket/commit/7c2e7b2e1c6ebee246b30b06c7e637b8977fc314)
+  - Connecting to switch with manual control doesn't reflect switch state [#64](https://github.com/mcci-usb/Cricket/commit/26e89016305b4793a1ba2b845c927dae74b9e0cb)
+  - Read port status [#91](https://github.com/mcci-usb/Cricket/commit/9276c52454e9f99fdcfcce17e0ed984e02ac1a6d)
+  - Alternate duty cycle calculation [#92](https://github.com/mcci-usb/Cricket/commit/38fedac7fee8d47e6630a9ce78d566b2a2cd06ef)
 - v2.7.0 is a patch release it contains.
   - Cricket UI fails to launch on ubuntu 20.04 and 22.04
   
