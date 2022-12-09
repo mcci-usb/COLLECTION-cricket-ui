@@ -351,7 +351,7 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 
 ### PDF/Word Documentation
 
-The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552h_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557k_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
+The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552i_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557k_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
 
 ### Known bugs and issues
 
