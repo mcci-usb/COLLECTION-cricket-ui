@@ -28,7 +28,7 @@
 #define MyAppDir "Cricket"
 #define MyAppName "Cricket UI"
 #define MyProductName "MCCI® Cricket UI"
-#define MyAppVersion "3.0.0"
+#define MyAppVersion "3.1.0"
 #define MyAppPublisher "MCCI Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "Cricket.exe"

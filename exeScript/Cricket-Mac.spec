@@ -22,6 +22,7 @@ a.datas += [('/icons/btn_on.png','../Cricket/src/icons/btn_on.png', "DATA")]
 a.datas += [('/icons/btn_off.png','../Cricket/src/icons/btn_off.png', "DATA")]
 a.datas += [('/icons/wave.png','../Cricket/src/icons/wave.png', "DATA")]
 a.datas += [('/icons/noswitch.png','../Cricket/src/icons/noswitch.png', "DATA")]
+a.datas += [('/icons/warning.png','../Cricket/src/icons/warning.png', "DATA")]
 
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
