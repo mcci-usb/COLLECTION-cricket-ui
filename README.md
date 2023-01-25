@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket UI`.
 
-[![Git release](https://img.shields.io/badge/release-v3.0.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v3.0.0-7-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/compare/V3.0.0-Pre3...master)
+[![Git release](https://img.shields.io/badge/release-v3.1.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v3.0.1-8-blue)](https://github.com/mcci-usb/Cricket/compare/v300-1...master)
 
 **Contents:**
 <!--
@@ -396,6 +396,12 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
+
+- v3.1.0 is patch release it contains the following changes
+  - Added for TB4 speed Support in Mac [#96 Support TB4 speed](https://github.com/mcci-usb/Cricket/commit/273f01cb61966654b09ddd80f9b2cbbd88d67c4d)
+  - Showing of warning dialog in batch mode [#99](https://github.com/mcci-usb/Cricket/commit/a51470a69123ab6b89b3abf7501c1ceee7b1f441)
+  - Increase of minimum delay from 500 msec to 1000 msec [#100](https://github.com/mcci-usb/Cricket/commit/9c8029d657ab46589acc1217d6ad1a95b3f8cbd5)
+  - Add delay when switch ports[#98](https://github.com/mcci-usb/Cricket/commit/4237cd4baec8a19552d527c3c9d6be07d972c73d)
 
 - v3.0.0 is major release  it Contains the following changes
   - Incorrect view showing in Log window while using USB4 hub [#77](https://github.com/mcci-usb/Cricket/commit/1d78e766a38564262e1964d315f60cccc76324ca)
