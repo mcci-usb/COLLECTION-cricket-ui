@@ -81,7 +81,7 @@ Download [python3.7.6](https://www.python.org/downloads/release/python-376/) and
 pip install wxpython==4.0.7.post2
 pip install pyserial
 pip install pyusb
-pip install hidapi==0.10.1
+pip install hidapi==0.11.2
 pip install matplotlib
 pip install pyinstaller
 ```
@@ -99,7 +99,7 @@ Development environment
 * libusb1 - 1.8
 * pyinstaller - 4.7
 * matplotlib - 3.5
-* hidapi - 0.10.1  - Only for Mac OS
+* hidapi - 0.11.2 
 
 ```shell
 sudo apt-get install python3
@@ -132,7 +132,7 @@ Development environment
 * libusb1 - 1.8
 * pyinstaller - 4.2
 * matplotlib - 3.2.2
-* hidapi - 0.10.1  - Only for Mac OS
+* hidapi - 0.11.2
 
 ```shell
 sudo apt-get install python3
@@ -160,7 +160,7 @@ Development environment
 * libusb1 - 1.9
 * pyinstaller - 4.2
 * matplotlib - 1.14.0
-* hidapi - 0.10.1  - Only for Mac OS
+* hidapi - 0.11.2
 
 ```shell
 sudo add-apt-repository ppa:swt-techie/wxpython4
@@ -318,7 +318,7 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 * download the MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
 * extract the Linux installer file.
 * open the Terminal at .deb file location.
-* install the Cricket_3.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_3.0.0_all.deb`
+* install the Cricket_4.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_4.0.0_all.deb`
 
 For more info about installation procedure see,
 The `doc` directory contain installation for Cricket UI step by step procedure [Linux-Installation-Steps](doc/MCCI-Cricket-UI-Linux-Installation-Steps.pdf)
@@ -332,7 +332,7 @@ For more info about installation procedure see,
 * download MCCI Cricket UI RPI installer from Collections-cricket-ui releases.
 * extract the RPI installer file.
 * open the Terminal at .deb file location.
-* install the Cricket_3.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_3.0.0_all.deb`
+* install the Cricket_4.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_4.0.0_all.deb`
 
 ### Mac Installation Document
 
@@ -396,6 +396,13 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
+- v4.0.0
+
+  - Add support for MCCI USB Switch 3142 [#103 Switch3142](https://github.com/mcci-usb/Cricket/commit/b7acf28e340d8c7cdda6a4772055c1362488447b)
+
+  - Add firmware update support through USB Serial for 3141 and 3142 USB Swicth [#104 Firmware Update](https://github.com/mcci-usb/Cricket/commit/6fea68935fb8f227c62df145e48d15ba307f0d72).
+
+  - Adding VI chart support for Switch3142 [#105 VI BUS plot](https://github.com/mcci-usb/Cricket/commit/c1009b093b1615b04c87700c341fce090daab548)
 
 - v3.1.0 is patch release it contains the following changes
   - Added for TB4 speed Support in Mac [#96 Support TB4 speed](https://github.com/mcci-usb/Cricket/commit/273f01cb61966654b09ddd80f9b2cbbd88d67c4d)
