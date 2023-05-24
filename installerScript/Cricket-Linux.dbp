@@ -1,7 +1,7 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: Cricket
-Version: 3.1.0
+Version: 4.0.0
 Maintainer: Seenivasan <seenivasanv@mcci.com>
 Section: embedded
 Homepage: www.mcci.com
@@ -42,7 +42,7 @@ Description: User Interface for controlling MCCI USB Switches  and Connection Ex
 <<MENU>>
 1
 Name=Cricket
-Version=3.0
+Version=4.0
 Exec=Cricket
 Icon=/usr/bin/icons/mcci_logo.ico
 Type=Application
