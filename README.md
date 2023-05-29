@@ -1,8 +1,8 @@
 # COLLECTION-Cricket
 
-This collection of repositories is used for building `Cricket UI`.
+This collection of repositories is used for building `Cricket` UI for MCCI USB Switches. Complete release are also available [here](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/).
 
-[![Git release](https://img.shields.io/badge/release-v3.1.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v3.0.1-8-blue)](https://github.com/mcci-usb/Cricket/compare/v300-1...master)
+[![Git release](https://img.shields.io/badge/release-v4.0.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/) [![Git commits](https://img.shields.io/badge/commits%20since%20v4.0.0-5-blue)](https://github.com/mcci-usb/Cricket/compare/version400...master)
 
 **Contents:**
 <!--
@@ -111,7 +111,6 @@ sudo pip3 install libusb
 sudo pip3 install libusb1
 sudo pip3 install matplotlib
 sudo pip3 install pyinstaller
-brew install hidapi - Only for Mac OS
 ```
 
 Note:
@@ -144,7 +143,7 @@ brew install libusb
 sudo pip3 install libusb1
 sudo pip3 install matplotlib
 sudo pip3 install pyinstaller
-brew install hidapi - Only for Mac OS
+brew install hidapi==0.11.2
 ```
 
 <strong>On RaspberryPI:</strong>
@@ -217,10 +216,21 @@ This show up application UI window on screen
 `cricketlib` api is a python library this library intract with `Cricekt UI`.
 download or clone the repository from [here](https://github.com/mcci-usb/cricketlib).
 
-To install the library [package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package)
+To install the library [package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package) in `Windows`
 
 ```shell
 python setup.py install
+```
+
+To install the library [package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package) in `Linux`
+
+```shell
+sudo python3 setup.py install
+```
+To install the library [package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package) in `Mac OS`
+
+```shell
+sudo python3 setup.py install
 ```
 
 Please navigate to dist/ directory and you will find the files .egg file. Example: cricketapi-1.0.0-py3.7.egg
@@ -396,7 +406,7 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
-- v4.0.0
+- v4.0.0 is manjor release it contains the following changes.
 
   - Add support for MCCI USB Switch 3142 [#103 Switch3142](https://github.com/mcci-usb/Cricket/commit/b7acf28e340d8c7cdda6a4772055c1362488447b)
 
