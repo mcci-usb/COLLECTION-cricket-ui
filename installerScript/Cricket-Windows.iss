@@ -94,6 +94,9 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}";
 
+[InstallDelete]
+Type: filesandordirs; Name: "{app}\*"
+
 [Code]
 function InitializeSetup(): Boolean;
 var
