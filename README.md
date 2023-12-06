@@ -227,6 +227,7 @@ To install the library [package](https://github.com/mcci-usb/cricketlib#installi
 ```shell
 sudo python3 setup.py install
 ```
+
 To install the library [package](https://github.com/mcci-usb/cricketlib#installing-cricketlib-package) in `Mac OS`
 
 ```shell
@@ -406,7 +407,21 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
-- v4.0.0 is manjor release it contains the following changes.
+
+- v4.2.0 is patch release it contains the following changes.
+
+  - Add USB4/Thunderbolt4 Tree window [#118 Tree Window](https://github.com/mcci-usb/Cricket/commit/5159c98a7f0423e82ed59ba78499861a431785cc)
+  - Add Support for USB4/TB4 speed infomation[#106 USB4 speed info](https://github.com/mcci-usb/Cricket/commit/d79472781e417970bae08c849dbea74856dcf58c)
+  - Updated Config file [#config file](https://github.com/mcci-usb/Cricket/commit/6ee526e27926f20f60576ece64c448eaac0b8ccb)
+  - Update USB info in status bar[#124](https://github.com/mcci-usb/Cricket/commit/0414a79ab1e50317dda9f0e8bba55af038843256)
+
+- v4.1.0 is patch release it contains the following changes.
+  
+  - added feature for Updated software notification[#113](https://github.com/mcci-usb/Cricket/commit/3bb0094315ac70cb5700a7e718d4a6ba0f947d54)
+
+  - Add support for swtich 3142 in Cricket UI
+
+- v4.0.0 is major release it contains the following changes.
 
   - Add support for MCCI USB Switch 3142 [#103 Switch3142](https://github.com/mcci-usb/Cricket/commit/b7acf28e340d8c7cdda6a4772055c1362488447b)
 
