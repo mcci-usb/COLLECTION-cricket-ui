@@ -362,7 +362,7 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 
 ### PDF/Word Documentation
 
-The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552i_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557k_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
+The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552l_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557n_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
 
 ### Known bugs and issues
 
@@ -407,6 +407,12 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
+
+- v4.3.0 is patch release it contains the following changes.
+
+  - Two and Three computers support windows [#127](https://github.com/mcci-usb/Cricket/commit/5393cb66f8dbabbb3bb758ccd2578203e0f84ab1)
+  - Implement Disconnect Switch [#128](https://github.com/mcci-usb/Cricket/commit/6d892fcbdd86364f6d45fad4159ab4ab42f539c6)
+  - Fixed USB Read Error [#129](https://github.com/mcci-usb/Cricket/commit/90e81bddcda58191526146eac9cdeccfbd17e85e)
 
 - v4.2.0 is patch release it contains the following changes.
 
