@@ -6,8 +6,8 @@ added_files = [('..\\Cricket\\src\\icons', 'icons')]
 
 a = Analysis(['..\\Cricket\\src\\main.py'],
              pathex=['.\\Cricket\\src'],
-             binaries=[],
-             datas=added_files,
+             binaries=[('C:\\Windows\\System32\\libusb-1.0.dll', 'libusb-1.0')],
+             datas=[('c:\Windows\System32\libusb-1.0.dll', '.'),] + added_files,
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
@@ -16,6 +16,7 @@ a = Analysis(['..\\Cricket\\src\\main.py'],
              win_private_assemblies=False,
              cipher=block_cipher,
              noarchive=False)
+
 			 
 a.datas += [('..\\Cricket\\src\\icons\\mcci_logo.ico','\\icons\\mcci_logo.ico', "DATA")]
 a.datas += [('..\\Cricket\\src\\icons\\mcci_logo.png','\\icons\\mcci_logo.png', "DATA")]
