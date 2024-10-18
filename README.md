@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket` UI for MCCI USB Switches. Complete release are also available [here](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/).
 
-[![Git release](https://img.shields.io/badge/release-v4.3.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.3.0)
+[![Git release](https://img.shields.io/badge/release-v4.3.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.4.1)
 
 **Contents:**
 <!--
@@ -407,6 +407,14 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
+
+- v4.4.1 is patch release it contains the following changes.
+  - Connected COM Port not Appears in combobox while disconnecting the switch [#139](https://github.com/mcci-usb/Cricket/commit/bab597b224512391dfcca8bdb08aabe7f4318784)
+  - Show Popup Dialog Window for USB4 Tree View Credentials [#138](https://github.com/mcci-usb/Cricket/commit/b8367db41fd963178f7c9ce0d44973d8f2d9cafe)
+
+
+- v4.4.0 is patch release it contains the following changes.
+  - Support USB3 Tree view multi level [#136](https://github.com/mcci-usb/Cricket/commit/f30ecae07d589540c657318822bbfd70a106c2c5)
 
 - v4.3.0 is patch release it contains the following changes.
 
