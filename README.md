@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket` UI for MCCI USB Switches. Complete release are also available [here](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/).
 
-[![Git release](https://img.shields.io/badge/release-v4.3.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.4.1)
+[![Git release](https://img.shields.io/badge/release-v4.4.1-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.4.1)
 
 **Contents:**
 <!--
