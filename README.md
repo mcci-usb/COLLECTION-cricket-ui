@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket` UI for MCCI USB Switches. Complete release are also available [here](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/).
 
-[![Git release](https://img.shields.io/badge/release-v4.4.1-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.4.1)
+[![Git release](https://img.shields.io/badge/release-v4.4.2-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.4.1)
 
 **Contents:**
 <!--
@@ -329,7 +329,7 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 * download the MCCI Cricket UI Linux installer from Collections-cricket-ui releases.
 * extract the Linux installer file.
 * open the Terminal at .deb file location.
-* install the Cricket_4.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_4.0.0_all.deb`
+* install the Cricket_4.4.2_all.deb using the cmd of `sudo dpkg -i Cricket_4.4.2_all.deb`
 
 For more info about installation procedure see,
 The `doc` directory contain installation for Cricket UI step by step procedure [Linux-Installation-Steps](doc/MCCI-Cricket-UI-Linux-Installation-Steps.pdf)
@@ -343,7 +343,7 @@ For more info about installation procedure see,
 * download MCCI Cricket UI RPI installer from Collections-cricket-ui releases.
 * extract the RPI installer file.
 * open the Terminal at .deb file location.
-* install the Cricket_4.0.0_all.deb using the cmd of `sudo dpkg -i Cricket_4.0.0_all.deb`
+* install the Cricket_4.4.2_all.deb using the cmd of `sudo dpkg -i Cricket_4.4.2_all.deb`
 
 ### Mac Installation Document
 
@@ -362,7 +362,7 @@ The `doc` directory contain installation for Cricket UI step by step procedure [
 
 ### PDF/Word Documentation
 
-The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552l_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557n_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
+The `doc` directory contains [MCCI Cricket-UI-User-Guide](doc/950001552o_(MCCI-Cricket-UI-User-Guide).pdf) document and [MCCI-Cricket-UI-Release-Notes](doc/950001557q_(MCCI-Cricket-UI-Release-Notes).pdf), which docuements provide the information of Controlling the MCCI USB Switches through Cricket UI.
 
 ### Known bugs and issues
 
@@ -407,6 +407,13 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
+
+- v4.4.2 is patch release it contains the following changes.
+
+  - Model 3141 & Model 3142 firmware update from Bootmode [#142](https://github.com/mcci-usb/Cricket/commit/69a614ba75d7fc7c47f5b5cc94766a29f0ae110c)
+  - Auto-Disconnect Without Explicit Switch Selection [#143](https://github.com/mcci-usb/Cricket/commit/e8077d353df07dc41fa9e26e156107cc2be9673d)
+  - UT log window not showing in UI until enabled [#144](https://github.com/mcci-usb/Cricket/commit/83a1d677aa0799241dcd2a8eb1caaa72e416f966)
+  - Standardize Case for Labels [#145](https://github.com/mcci-usb/Cricket/commit/e4df088442bbfec76356f4e6a07bfd9a7c4195a9)
 
 - v4.4.1 is patch release it contains the following changes.
   - Connected COM Port not Appears in combobox while disconnecting the switch [#139](https://github.com/mcci-usb/Cricket/commit/bab597b224512391dfcca8bdb08aabe7f4318784)
