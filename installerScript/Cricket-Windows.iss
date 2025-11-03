@@ -6,7 +6,7 @@
 ;	Inno Setup install script for the Cricket-Installer distribution.
 ;
 ; Copyright notice:
-;	This file copyright (C) 2020 by
+;	This file copyright (C) 2025 by
 ;		MCCI Corporation
 ;		3520 Krums Corners Road
 ;		Ithaca, NY  14850
@@ -27,14 +27,14 @@
 
 #define MyAppDir "Cricket"
 #define MyAppName "Cricket UI"
-#define MyProductName "MCCI® Cricket UI"
-#define MyAppVersion "4.4.2"
-#define MyAppPublisher "MCCI Corporation"
+#define MyProductName "MCCI Cricket UI"
+#define MyAppVersion "4.5.0"
+#define MyAppPublisher "MCCI Â© Corporation"
 #define MyAppURL "https://mcci.com"
 #define MyAppExeName "Cricket.exe"
-#define MyAppComments "MCCI® Cricket UI Installer"
+#define MyAppComments "MCCIÂ® Cricket UI Installer"
 #define MyOrgName "MCCI"
-#define MyAppCopyRight "Copyright ©2024 MCCI Corporation"
+#define MyAppCopyRight "CopyrightÂ© 2025 MCCI Corporation"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.

@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket` UI for MCCI USB Switches. Complete release are also available [here](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/).
 
-[![Git release](https://img.shields.io/badge/release-v4.4.2-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.4.1)
+[![Git release](https://img.shields.io/badge/release-v4.5.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.5.0)
 
 **Contents:**
 <!--
@@ -407,6 +407,10 @@ the name of zipped folder should be `MCCI-Cricket-UI-<ver tag>-Mac-Installer.pkg
 The Mac application and the Application Installer must be signed and notarized before it can be deployed.
 
 ## Release History
+
+-  v4.5.0 is patach release its contains the following chnages.
+
+   - device Detects Different COM Port After Switching to Boot Mode During Firmware Update[#147](https://github.com/mcci-usb/Cricket/commit/290560d239955475b5c467f85b4859e75f00d23c)
 
 - v4.4.2 is patch release it contains the following changes.
 
