@@ -2,7 +2,7 @@
 
 This collection of repositories is used for building `Cricket` UI for MCCI USB Switches. Complete release are also available [here](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/).
 
-[![Git release](https://img.shields.io/badge/release-v4.7.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.6.0)
+[![Git release](https://img.shields.io/badge/release-v4.8.0-blue)](https://github.com/mcci-usb/COLLECTION-cricket-ui/releases/tag/v4.8.0)
 
 **Contents:**
 <!--
@@ -67,7 +67,7 @@ Then change directories to the top level of the cloned repository.
 
 Development environment
 
-* OS - Windows 10 64 bit
+* OS - Windows 11 64 bit
 * Python - 3.7.6
 * wxpython - 4.0.7.post2
 * pyserial - 3.4
@@ -408,7 +408,11 @@ The Mac application and the Application Installer must be signed and notarized b
 
 ## Release History
 
-- v4.7.0 is patach release its contains the following changes.
+- v4.8.0 is a patch release. It contains the following change.
+
+    - Removed the **1000 ms switch delay** for **3141** switches running firmware version **3 or later**. The **1000 ms delay** continues to apply for all other switches and for 3141 switches with firmware versions earlier than 3.[#157](https://github.com/mcci-usb/COLLECTION-cricket-ui/commit/5b0815788dfb08e9de6f357897852f85e8532bb9)
+
+- v4.7.0 is patch release its contains the following changes.
     - Support Per-Model Port Syntax in Batch Script Generator & Revert [#155](https://github.com/mcci-usb/Cricket/commit/007231d87f16ed34464283b59621715e12dd8771).
     - Implement Voltage and Current Update for Manual Port Control [#154](https://github.com/mcci-usb/Cricket/commit/cfb423f992dd080f0f3571d633ca7caa47a523fa)
     - firmware update Model name and Hex file comapresion [#153](https://github.com/mcci-usb/Cricket/commit/759dc7615326558e51efd1e6eb6c0d60b94edf7b).
