@@ -1,8 +1,8 @@
 [DEBREATE-0.7.13]
 <<CTRL>>
 Package: Cricket
-Version: 4.7.0
-Maintainer: Seenivasan <seenivasanv@mcci.com>
+Version: 4.8.0
+Maintainer: Akash <akashv@mcci.com>
 Section: embedded
 Homepage: www.mcci.com
 Architecture: all
